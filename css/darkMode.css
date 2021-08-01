@@ -1,0 +1,48 @@
+html {
+    background-color: black !important;
+    text-shadow: 0 0 0 !important;
+}
+body,
+iframe {
+    background-color: transparent !important;
+    background: transparent !important;
+    background-image: none !important;
+}
+body {
+    -webkit-filter: invert(1) hue-rotate(180deg) !important;
+    filter: invert(1) hue-rotate(180deg);
+}
+iframe,
+img,
+video,
+figure:empty,
+*[data-img],
+*[data-thumb-url],
+:not(object):not(body) > embed,
+object,
+svg image,
+[style*="background:url"],
+[style*="background-image:url"],
+[darkmodesafari*="yes"],
+[style*="background: url"],
+[style*="background-image: url"],
+[background] {
+    -webkit-filter: invert(1) hue-rotate(180deg) !important;
+    filter: invert(1) hue-rotate(180deg);
+}
+
+[style*="background:url"] *,
+[darkmodesafari*="yes"] *,
+[style*="background-image:url"] *,
+[style*="background: url"] *,
+[style*="background-image: url"] *,
+input,
+[background] * {
+    -webkit-filter: none !important;
+    filter: none;
+}
+:-webkit-full-screen,
+:-webkit-full-screen * {
+    -webkit-filter: none !important;
+    filter: none;
+}
