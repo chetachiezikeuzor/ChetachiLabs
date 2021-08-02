@@ -1,5 +1,5 @@
 {
-  "name": "learn-starter",
+  "name": "chetachi-labs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,11 +8,22 @@
     "start": "next start"
   },
   "dependencies": {
+    "@nishans/idz": "0.0.19",
     "@notionhq/client": "^0.2.3",
+    "classnames": "^2.2.6",
     "next": "^11.0.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-gist": "^1.2.2",
     "react-meta-tags": "^1.0.1",
-    "react-use-color-mode": "^1.3.0"
+    "react-notion-x": "^4.8.2",
+    "react-use-color-mode": "^1.3.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.6",
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7"
   }
 }

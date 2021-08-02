@@ -1,18 +1,15 @@
+import { Fragment } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import NextLink from "next/link";
-import { Text } from "/pages/[id].js";
-import { getDatabase } from "/lib/notion";
-
-import { useRouter } from "next/router";
-import { Box, Container, Flex, Heading } from "react";
-import { name, description, url, socialImage } from "/lib/config";
+import { Text } from "./[id].js";
+import { getDatabase } from "../lib/notion";
+import TextRenderer from "./TextRenderer";
 
 export const databaseId = process.env.NOTION_DATABASE_ID;
 
 export default function Home({ posts }) {
-  const { pathname } = useRouter();
   return (
     <div className="main">
       <Head>
@@ -28,19 +25,13 @@ export default function Home({ posts }) {
           href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
           rel="stylesheet"
         />
-
-        <meta name="description" content={description} />
-        <meta property="og:title" content={`${name} - all posts`} />
-        <meta property="og:description" content={description} />
-        <meta property="og:url" content={url + pathname} />
-        <meta property="og:image" content={socialImage} />
       </Head>
 
       <main>
         <header className="nav-header">
           <div className="logo-container">
             <a className="nav-logo" id="logo" href="#welcome-section">
-              <img src="/img/c-icon.png" alt="" width="56px" />
+              <img src="img/c-icon.png" alt="" width="56px" />
             </a>
           </div>
           <nav id="navbar">
@@ -48,7 +39,7 @@ export default function Home({ posts }) {
               <li>
                 {" "}
                 <Link href="/blog">
-                  <a className="nav-link" href="#projects-wrap">
+                  <a className="nav-link" href="/#projects-wrap">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       aria-hidden="true"
@@ -68,7 +59,7 @@ export default function Home({ posts }) {
                 </Link>
               </li>
               <li>
-                <a className="nav-link" href="#welcome-section">
+                <a className="nav-link" href="/#welcome-section">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     aria-hidden="true"
@@ -91,7 +82,7 @@ export default function Home({ posts }) {
                 </a>
               </li>
               <li>
-                <a className="nav-link" href="#projects-wrap">
+                <a className="nav-link" href="/#projects-wrap">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     aria-hidden="true"
@@ -135,7 +126,7 @@ export default function Home({ posts }) {
                 </a>
               </li>
               <li>
-                <a className="nav-link" href="#contact-section">
+                <a className="nav-link" href="/#contact-section">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     aria-hidden="true"
@@ -154,7 +145,7 @@ export default function Home({ posts }) {
                 </a>
               </li>
               <li>
-                <a className="nav-link" href="#contact-section">
+                <a className="nav-link" href="/#contact-section">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     aria-hidden="true"
@@ -177,77 +168,102 @@ export default function Home({ posts }) {
             <div className="menu-icon"></div>
           </nav>
         </header>
-
         <section className="blog-section align-items-center">
-          <div>
-            <div className="full-posts-area">
-              {posts.data.map((post) => {
-                const {} = post.properties;
-                const description =
-                  post.properties.Description.rich_text.rich_text;
-                let curDate;
-                if (post.properties.CreatedMod === "") {
-                  curDate = post.last_edited_time;
-                } else {
-                  curDate = post.properties.CreatedMod;
-                }
-                const date = new Date(post.last_edited_time).toLocaleString(
-                  "en-US",
-                  {
-                    month: "short",
-                    day: "2-digit",
-                    year: "numeric",
-                  }
-                );
-                console.log(curDate);
-                return (
-                  <article
-                    className="blog-post-block content-item"
-                    key={post.id}
-                  >
-                    <div
-                      role="listitem"
-                      className="collection-content-item w-dyn-item"
+          <div className="blog-grid">
+            <div className="side-bar">
+              <div className="sticky-block">
+                <div className="sticky-inner" style={{ paddingRight: "38px" }}>
+                  <h3>
+                    Chetachi
+                    <em
+                      style={{
+                        color: "blue",
+                      }}
                     >
-                      <a
-                        href={`/${post.id}`}
-                        className="content-blog w-inline-block "
+                      {" "}
+                      Labs
+                    </em>
+                  </h3>
+                  <p>This is my personal blog</p>
+                  <p>
+                    If you found value here, you could get me a coffee ☕️
+                    <br />
+                    If you've got a question or you'd just like to reach out to
+                    me, reach me here → 💌 hello@bychetachi.com
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="posts-area">
+              <div className="full-posts-grid">
+                {posts.data.map((post) => {
+                  const { entry, slug, summary, MainImage, social_image } =
+                    post.properties;
+                  const description =
+                    post.properties.Description.rich_text.rich_text;
+                  let curDate;
+                  if (post.properties.CreatedMod === "") {
+                    curDate = post.last_edited_time;
+                  } else {
+                    curDate = post.properties.CreatedMod;
+                  }
+                  const date = new Date(post.last_edited_time).toLocaleString(
+                    "en-US",
+                    {
+                      month: "short",
+                      day: "2-digit",
+                      year: "numeric",
+                    }
+                  );
+                  console.log(curDate);
+                  return (
+                    <article key={post.id}>
+                      <div
+                        role="listitem"
+                        className="collection-content-item w-dyn-item"
                       >
-                        <div className="content-blog-image-wrap">
-                          <Image
-                            src={
-                              post.properties.MainImage.rich_text[0].plain_text
-                            }
-                            loading="lazy"
-                            alt="image"
-                            layout="fill"
-                            objectFit="cover"
-                            className="image-full"
-                          />
-                        </div>
-                        <div className="content-block">
-                          <h5 className="h5-title">
-                            <Text text={post.properties.Name.title} />
-                          </h5>
-                          <p className="tag-top">
-                            {
-                              post.properties.Description.rich_text[0]
-                                .plain_text
-                            }
-                          </p>
-                          <p className="">{date}</p>
-                        </div>
-                      </a>
-                    </div>
-                  </article>
-                );
-              })}
+                        <a
+                          href={`/${post.id}`}
+                          className="content-blog w-inline-block content-item"
+                        >
+                          <div className="content-blog-image-wrap">
+                            <Image
+                              src={
+                                post.properties.MainImage.rich_text[0]
+                                  .plain_text
+                              }
+                              loading="lazy"
+                              alt="image"
+                              layout="fill"
+                              objectFit="cover"
+                              className="image-full"
+                            />
+                          </div>
+                          <div className="content-block">
+                            <h5 className="h5-title">
+                              <Text text={post.properties.Name.title} />
+                            </h5>
+
+                            <p className="tag-top">
+                              {
+                                post.properties.Description.rich_text[0]
+                                  .plain_text
+                              }
+                            </p>
+                            <p className="">{date}</p>
+                          </div>
+                        </a>
+                      </div>
+                    </article>
+                  );
+                })}
+              </div>
             </div>
           </div>
           <div className="pagination-buttons">
-            <button className="back-button button">Previous</button>
             <NextLink href="/archive/posts" passHref>
-              <button className="forward-botton button">Next</button>
+              <button className="forward-botton button">All posts</button>
             </NextLink>
           </div>
         </section>

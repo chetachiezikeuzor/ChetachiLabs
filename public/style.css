@@ -5,7 +5,7 @@ VARIABLES
   --white: #f8f8f8;
   --blue: #0000ff;
   --blue-dark: #18182c;
-  --sleak-sky: #54bffd;
+  --sleak-sky: #85d2ff;
   --sleak-bold: hsla(45, 5%, 86%, 100%);
   --sleak-medium: hsla(40, 5%, 89%, 100%);
   --pink-light: hsl(292, 57%, 97%);
@@ -500,9 +500,15 @@ CONTENT SECTIONS
 CONTENT BLOCKS
 ------------------*/
 
+.content-blog {
+  height: 100%;
+  transition: 300ms ease-in-out;
+  text-decoration: none;
+}
+
 .content-item {
   height: 100%;
-  padding: 40px;
+  padding: 30px;
   transition: 300ms ease-in-out;
   text-decoration: none;
   background-color: var(--white-alpha-75);
@@ -514,14 +520,25 @@ CONTENT BLOCKS
 }
 
 .w-inline-block {
-  max-width: 100%;
+  width: 100%;
+  text-decoration: none;
   display: inline-block;
+}
+
+.content-blog-image-wrap {
+  position: relative;
+  overflow: hidden;
+  height: 238px;
+  width: 100%;
+  margin-bottom: 32px;
+  border: 1px solid var(--white-alpha-36);
+  border-radius: 3px;
 }
 
 .content-image-wrap {
   position: relative;
   overflow: hidden;
-  height: 219px;
+  height: 238px;
   width: 100%;
   margin-bottom: 32px;
 }
@@ -663,7 +680,6 @@ TEXT ELEMENTS
 p {
   margin-bottom: 0px;
   color: #232a37;
-  font-size: 14px;
   line-height: 24px;
 }
 
