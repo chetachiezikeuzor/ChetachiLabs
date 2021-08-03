@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <div className="main">
       <Head>
-        <title>Chetachi's Website ❤️</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Chetachi's Portfolio Site ❤️</title>
+        <link rel="icon" href="/c-icon.png" />
 
         <link rel="stylesheet" href="/style.css" />
         <link rel="stylesheet" href="/blog.css" />
@@ -30,29 +30,7 @@ export default function Home() {
           <nav id="navbar">
             <ul className="desktop-nav">
               <li>
-                {" "}
-                <Link href="/blog">
-                  <a className="nav-link">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      aria-hidden="true"
-                      focusable="false"
-                      width="1em"
-                      height="1em"
-                      preserveAspectRatio="xMidYMid meet"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M3 8v11c0 2.201 1.794 3 3 3h15v-2H6.012C5.55 19.988 5 19.806 5 19s.55-.988 1.012-1H21V4c0-1.103-.897-2-2-2H6c-1.206 0-3 .799-3 3v3zm3-4h13v12H5V5c0-.806.55-.988 1-1z"
-                        fill=""
-                      />
-                    </svg>
-                    <text>Blog</text>
-                  </a>
-                </Link>
-              </li>
-              <li>
-                <a className="nav-link" href="/#welcome-section">
+                <a className="nav-link" href="/#about-wrap">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     aria-hidden="true"
@@ -75,7 +53,7 @@ export default function Home() {
                 </a>
               </li>
               <li>
-                <a className="nav-link" href="/#projects-wrap">
+                <a className="nav-link" href="/#applications-wrap">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     aria-hidden="true"
@@ -119,7 +97,7 @@ export default function Home() {
                 </a>
               </li>
               <li>
-                <a className="nav-link" href="/#contact-section">
+                <a className="nav-link" href="/#contact-wrap">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     aria-hidden="true"
@@ -189,7 +167,7 @@ export default function Home() {
           </div>
         </section>
 
-        <div className="content-section" id="projects-wrap">
+        <div className="content-section" id="about-wrap">
           <div className="container">
             <div className="content-wrapper">
               <div className="title-wrapper">
@@ -227,7 +205,45 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="content-section" id="projects-wrap">
+        <div className="content-section" id="leadership-wrap">
+          <div className="container">
+            <div className="content-wrapper">
+              <div className="title-wrapper">
+                <div className="header-title-block">
+                  <div className="header-accent-wrap">
+                    <h3 className="h3-large-title">
+                      Leadership
+                      <br />
+                      Skills
+                    </h3>
+                  </div>
+                  <p className="paragraph-width">
+                    These are a few projects I've worked on in contribution to
+                    open source tools.
+                  </p>
+                </div>
+                <a href="/about" className="button w-button">
+                  See More
+                </a>
+              </div>
+              <div className="background-block-content"></div>
+              <div className="w-dyn-list">
+                <div
+                  id="contents"
+                  role="list"
+                  className="content-collection-grid w-dyn-items"
+                >
+                  <div
+                    role="listitem"
+                    className="collection-content-item w-dyn-item"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="content-section" id="skills-wrap">
           <div className="container">
             <div className="content-wrapper grid-layout">
               <div className="title-wrapper">
@@ -367,7 +383,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="content-section" id="projects-wrap">
+        <div className="content-section" id="applications-wrap">
           <div className="container">
             <div className="content-wrapper">
               <div className="title-wrapper">
@@ -402,194 +418,6 @@ export default function Home() {
                     <a href="#" className="content-item w-inline-block">
                       <div className="content-image-wrap">
                         <img
-                          src="https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/light2.png?raw=true"
-                          loading="lazy"
-                          alt=""
-                          sizes="(max-width: 479px) 86vw, (max-width: 767px) 77vw, (max-width: 991px) 430px, 37vw"
-                          className="image-full"
-                        />
-                      </div>
-                      <div className="content-block">
-                        <h5 className="h5-title">Project Title</h5>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.
-                        </p>
-                      </div>
-                      <div className="technologies-wrapper padding-top-32">
-                        <div className="technologies-ava">
-                          <svg
-                            className="technology-icon"
-                            xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true"
-                            focusable="false"
-                            width="1em"
-                            height="1em"
-                            preserveAspectRatio="xMidYMid meet"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              d="M3 3h18v18H3V3m10.71 14.86c.5.98 1.51 1.73 3.09 1.73c1.6 0 2.8-.83 2.8-2.36c0-1.41-.81-2.04-2.25-2.66l-.42-.18c-.73-.31-1.04-.52-1.04-1.02c0-.41.31-.73.81-.73c.48 0 .8.21 1.09.73l1.31-.87c-.55-.96-1.33-1.33-2.4-1.33c-1.51 0-2.48.96-2.48 2.23c0 1.38.81 2.03 2.03 2.55l.42.18c.78.34 1.24.55 1.24 1.13c0 .48-.45.83-1.15.83c-.83 0-1.31-.43-1.67-1.03l-1.38.8M13 11.25H8v1.5h1.5V20h1.75v-7.25H13v-1.5z"
-                              fill=""
-                            />
-                          </svg>
-                        </div>
-                        <div className="technologies-ava">
-                          <svg
-                            className="technology-icon"
-                            xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true"
-                            focusable="false"
-                            width="1em"
-                            height="1em"
-                            preserveAspectRatio="xMidYMid meet"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              d="M3 3h18v18H3V3m4.73 15.04c.4.85 1.19 1.55 2.54 1.55c1.5 0 2.53-.8 2.53-2.55v-5.78h-1.7V17c0 .86-.35 1.08-.9 1.08c-.58 0-.82-.4-1.09-.87l-1.38.83m5.98-.18c.5.98 1.51 1.73 3.09 1.73c1.6 0 2.8-.83 2.8-2.36c0-1.41-.81-2.04-2.25-2.66l-.42-.18c-.73-.31-1.04-.52-1.04-1.02c0-.41.31-.73.81-.73c.48 0 .8.21 1.09.73l1.31-.87c-.55-.96-1.33-1.33-2.4-1.33c-1.51 0-2.48.96-2.48 2.23c0 1.38.81 2.03 2.03 2.55l.42.18c.78.34 1.24.55 1.24 1.13c0 .48-.45.83-1.15.83c-.83 0-1.31-.43-1.67-1.03l-1.38.8z"
-                              fill=""
-                            />
-                          </svg>
-                        </div>
-                        <div className="technologies-ava">
-                          <svg
-                            className="technology-icon"
-                            xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true"
-                            focusable="false"
-                            width="1em"
-                            height="1em"
-                            preserveAspectRatio="xMidYMid meet"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              d="M4.136 3.012h15.729l-1.431 16.15l-6.451 1.826l-6.414-1.826l-1.433-16.15zm5.266 7.302l-.173-2.035l7.533.002l.173-1.963l-9.87-.002l.522 5.998h6.835l-.243 2.566l-2.179.602l-2.214-.605l-.141-1.58H7.691l.247 3.123L12 17.506l4.028-1.08l.558-6.111H9.402v-.001z"
-                              fill=""
-                            />
-                          </svg>
-                        </div>
-                        <div className="technologies-ava">
-                          <svg
-                            className="technology-icon"
-                            xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true"
-                            focusable="false"
-                            width="1em"
-                            height="1em"
-                            preserveAspectRatio="xMidYMid meet"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              d="M4.192 3.143h15.615l-1.42 16.034l-6.404 1.812l-6.369-1.813L4.192 3.143zM16.9 6.424l-9.8-.002l.158 1.949l7.529.002l-.189 2.02H9.66l.179 1.913h4.597l-.272 2.62l-2.164.598l-2.197-.603l-.141-1.569h-1.94l.216 2.867L12 17.484l3.995-1.137l.905-9.923z"
-                              fill=""
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div
-                    role="listitem"
-                    className="collection-content-item w-dyn-item"
-                  >
-                    <a href="#" className="content-item w-inline-block">
-                      <div className="content-image-wrap">
-                        <img
-                          src="img/cMenu Demo Header.png"
-                          loading="lazy"
-                          alt=""
-                          sizes="(max-width: 479px) 86vw, (max-width: 767px) 77vw, (max-width: 991px) 430px, 37vw"
-                          className="image-full"
-                        />
-                      </div>
-                      <div className="content-block">
-                        <h5 className="h5-title">Project Title</h5>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.
-                        </p>
-                      </div>
-                      <div className="technologies-wrapper padding-top-32">
-                        <div className="technologies-ava">
-                          <svg
-                            className="technology-icon"
-                            xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true"
-                            focusable="false"
-                            width="1em"
-                            height="1em"
-                            preserveAspectRatio="xMidYMid meet"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              d="M3 3h18v18H3V3m10.71 14.86c.5.98 1.51 1.73 3.09 1.73c1.6 0 2.8-.83 2.8-2.36c0-1.41-.81-2.04-2.25-2.66l-.42-.18c-.73-.31-1.04-.52-1.04-1.02c0-.41.31-.73.81-.73c.48 0 .8.21 1.09.73l1.31-.87c-.55-.96-1.33-1.33-2.4-1.33c-1.51 0-2.48.96-2.48 2.23c0 1.38.81 2.03 2.03 2.55l.42.18c.78.34 1.24.55 1.24 1.13c0 .48-.45.83-1.15.83c-.83 0-1.31-.43-1.67-1.03l-1.38.8M13 11.25H8v1.5h1.5V20h1.75v-7.25H13v-1.5z"
-                              fill=""
-                            />
-                          </svg>
-                        </div>
-                        <div className="technologies-ava">
-                          <svg
-                            className="technology-icon"
-                            xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true"
-                            focusable="false"
-                            width="1em"
-                            height="1em"
-                            preserveAspectRatio="xMidYMid meet"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              d="M3 3h18v18H3V3m4.73 15.04c.4.85 1.19 1.55 2.54 1.55c1.5 0 2.53-.8 2.53-2.55v-5.78h-1.7V17c0 .86-.35 1.08-.9 1.08c-.58 0-.82-.4-1.09-.87l-1.38.83m5.98-.18c.5.98 1.51 1.73 3.09 1.73c1.6 0 2.8-.83 2.8-2.36c0-1.41-.81-2.04-2.25-2.66l-.42-.18c-.73-.31-1.04-.52-1.04-1.02c0-.41.31-.73.81-.73c.48 0 .8.21 1.09.73l1.31-.87c-.55-.96-1.33-1.33-2.4-1.33c-1.51 0-2.48.96-2.48 2.23c0 1.38.81 2.03 2.03 2.55l.42.18c.78.34 1.24.55 1.24 1.13c0 .48-.45.83-1.15.83c-.83 0-1.31-.43-1.67-1.03l-1.38.8z"
-                              fill=""
-                            />
-                          </svg>
-                        </div>
-                        <div className="technologies-ava">
-                          <svg
-                            className="technology-icon"
-                            xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true"
-                            focusable="false"
-                            width="1em"
-                            height="1em"
-                            preserveAspectRatio="xMidYMid meet"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              d="M4.136 3.012h15.729l-1.431 16.15l-6.451 1.826l-6.414-1.826l-1.433-16.15zm5.266 7.302l-.173-2.035l7.533.002l.173-1.963l-9.87-.002l.522 5.998h6.835l-.243 2.566l-2.179.602l-2.214-.605l-.141-1.58H7.691l.247 3.123L12 17.506l4.028-1.08l.558-6.111H9.402v-.001z"
-                              fill=""
-                            />
-                          </svg>
-                        </div>
-                        <div className="technologies-ava">
-                          <svg
-                            className="technology-icon"
-                            xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true"
-                            focusable="false"
-                            width="1em"
-                            height="1em"
-                            preserveAspectRatio="xMidYMid meet"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              d="M4.192 3.143h15.615l-1.42 16.034l-6.404 1.812l-6.369-1.813L4.192 3.143zM16.9 6.424l-9.8-.002l.158 1.949l7.529.002l-.189 2.02H9.66l.179 1.913h4.597l-.272 2.62l-2.164.598l-2.197-.603l-.141-1.569h-1.94l.216 2.867L12 17.484l3.995-1.137l.905-9.923z"
-                              fill=""
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div
-                    role="listitem"
-                    className="collection-content-item w-dyn-item"
-                  >
-                    <a href="#" className="content-item w-inline-block">
-                      <div className="content-image-wrap">
-                        <img
                           src="img/highlightr.png"
                           loading="lazy"
                           alt=""
@@ -777,7 +605,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="content-section" id="projects-wrap">
+        <div className="content-section" id="contributions-wrap">
           <div className="container">
             <div className="content-wrapper">
               <div className="title-wrapper">
@@ -792,8 +620,8 @@ export default function Home() {
                     </h3>
                   </div>
                   <p className="paragraph-width">
-                    These are a few projects I've worked on in contribution to
-                    open source tools.
+                    I contribute to Obsidian.md by building tech tools to make
+                    note-taking easier for the community.
                   </p>
                 </div>
                 <a href="/about" className="button w-button">
@@ -822,7 +650,7 @@ export default function Home() {
                         />
                       </div>
                       <div className="content-block">
-                        <h5 className="h5-title">Project Title</h5>
+                        <h5 className="h5-title">Yin & Yang Theme</h5>
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit, sed do eiusmod tempor incididunt ut labore et
@@ -830,57 +658,6 @@ export default function Home() {
                         </p>
                       </div>
                       <div className="technologies-wrapper padding-top-32">
-                        <div className="technologies-ava">
-                          <svg
-                            className="technology-icon"
-                            xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true"
-                            focusable="false"
-                            width="1em"
-                            height="1em"
-                            preserveAspectRatio="xMidYMid meet"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              d="M3 3h18v18H3V3m10.71 14.86c.5.98 1.51 1.73 3.09 1.73c1.6 0 2.8-.83 2.8-2.36c0-1.41-.81-2.04-2.25-2.66l-.42-.18c-.73-.31-1.04-.52-1.04-1.02c0-.41.31-.73.81-.73c.48 0 .8.21 1.09.73l1.31-.87c-.55-.96-1.33-1.33-2.4-1.33c-1.51 0-2.48.96-2.48 2.23c0 1.38.81 2.03 2.03 2.55l.42.18c.78.34 1.24.55 1.24 1.13c0 .48-.45.83-1.15.83c-.83 0-1.31-.43-1.67-1.03l-1.38.8M13 11.25H8v1.5h1.5V20h1.75v-7.25H13v-1.5z"
-                              fill=""
-                            />
-                          </svg>
-                        </div>
-                        <div className="technologies-ava">
-                          <svg
-                            className="technology-icon"
-                            xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true"
-                            focusable="false"
-                            width="1em"
-                            height="1em"
-                            preserveAspectRatio="xMidYMid meet"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              d="M3 3h18v18H3V3m4.73 15.04c.4.85 1.19 1.55 2.54 1.55c1.5 0 2.53-.8 2.53-2.55v-5.78h-1.7V17c0 .86-.35 1.08-.9 1.08c-.58 0-.82-.4-1.09-.87l-1.38.83m5.98-.18c.5.98 1.51 1.73 3.09 1.73c1.6 0 2.8-.83 2.8-2.36c0-1.41-.81-2.04-2.25-2.66l-.42-.18c-.73-.31-1.04-.52-1.04-1.02c0-.41.31-.73.81-.73c.48 0 .8.21 1.09.73l1.31-.87c-.55-.96-1.33-1.33-2.4-1.33c-1.51 0-2.48.96-2.48 2.23c0 1.38.81 2.03 2.03 2.55l.42.18c.78.34 1.24.55 1.24 1.13c0 .48-.45.83-1.15.83c-.83 0-1.31-.43-1.67-1.03l-1.38.8z"
-                              fill=""
-                            />
-                          </svg>
-                        </div>
-                        <div className="technologies-ava">
-                          <svg
-                            className="technology-icon"
-                            xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true"
-                            focusable="false"
-                            width="1em"
-                            height="1em"
-                            preserveAspectRatio="xMidYMid meet"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              d="M4.136 3.012h15.729l-1.431 16.15l-6.451 1.826l-6.414-1.826l-1.433-16.15zm5.266 7.302l-.173-2.035l7.533.002l.173-1.963l-9.87-.002l.522 5.998h6.835l-.243 2.566l-2.179.602l-2.214-.605l-.141-1.58H7.691l.247 3.123L12 17.506l4.028-1.08l.558-6.111H9.402v-.001z"
-                              fill=""
-                            />
-                          </svg>
-                        </div>
                         <div className="technologies-ava">
                           <svg
                             className="technology-icon"
@@ -916,7 +693,7 @@ export default function Home() {
                         />
                       </div>
                       <div className="content-block">
-                        <h5 className="h5-title">Project Title</h5>
+                        <h5 className="h5-title">cMenu</h5>
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit, sed do eiusmod tempor incididunt ut labore et
@@ -954,23 +731,6 @@ export default function Home() {
                           >
                             <path
                               d="M3 3h18v18H3V3m4.73 15.04c.4.85 1.19 1.55 2.54 1.55c1.5 0 2.53-.8 2.53-2.55v-5.78h-1.7V17c0 .86-.35 1.08-.9 1.08c-.58 0-.82-.4-1.09-.87l-1.38.83m5.98-.18c.5.98 1.51 1.73 3.09 1.73c1.6 0 2.8-.83 2.8-2.36c0-1.41-.81-2.04-2.25-2.66l-.42-.18c-.73-.31-1.04-.52-1.04-1.02c0-.41.31-.73.81-.73c.48 0 .8.21 1.09.73l1.31-.87c-.55-.96-1.33-1.33-2.4-1.33c-1.51 0-2.48.96-2.48 2.23c0 1.38.81 2.03 2.03 2.55l.42.18c.78.34 1.24.55 1.24 1.13c0 .48-.45.83-1.15.83c-.83 0-1.31-.43-1.67-1.03l-1.38.8z"
-                              fill=""
-                            />
-                          </svg>
-                        </div>
-                        <div className="technologies-ava">
-                          <svg
-                            className="technology-icon"
-                            xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true"
-                            focusable="false"
-                            width="1em"
-                            height="1em"
-                            preserveAspectRatio="xMidYMid meet"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              d="M4.136 3.012h15.729l-1.431 16.15l-6.451 1.826l-6.414-1.826l-1.433-16.15zm5.266 7.302l-.173-2.035l7.533.002l.173-1.963l-9.87-.002l.522 5.998h6.835l-.243 2.566l-2.179.602l-2.214-.605l-.141-1.58H7.691l.247 3.123L12 17.506l4.028-1.08l.558-6.111H9.402v-.001z"
                               fill=""
                             />
                           </svg>
@@ -1010,7 +770,7 @@ export default function Home() {
                         />
                       </div>
                       <div className="content-block">
-                        <h5 className="h5-title">Project Title</h5>
+                        <h5 className="h5-title">Highlightr</h5>
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit, sed do eiusmod tempor incididunt ut labore et
@@ -1048,23 +808,6 @@ export default function Home() {
                           >
                             <path
                               d="M3 3h18v18H3V3m4.73 15.04c.4.85 1.19 1.55 2.54 1.55c1.5 0 2.53-.8 2.53-2.55v-5.78h-1.7V17c0 .86-.35 1.08-.9 1.08c-.58 0-.82-.4-1.09-.87l-1.38.83m5.98-.18c.5.98 1.51 1.73 3.09 1.73c1.6 0 2.8-.83 2.8-2.36c0-1.41-.81-2.04-2.25-2.66l-.42-.18c-.73-.31-1.04-.52-1.04-1.02c0-.41.31-.73.81-.73c.48 0 .8.21 1.09.73l1.31-.87c-.55-.96-1.33-1.33-2.4-1.33c-1.51 0-2.48.96-2.48 2.23c0 1.38.81 2.03 2.03 2.55l.42.18c.78.34 1.24.55 1.24 1.13c0 .48-.45.83-1.15.83c-.83 0-1.31-.43-1.67-1.03l-1.38.8z"
-                              fill=""
-                            />
-                          </svg>
-                        </div>
-                        <div className="technologies-ava">
-                          <svg
-                            className="technology-icon"
-                            xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true"
-                            focusable="false"
-                            width="1em"
-                            height="1em"
-                            preserveAspectRatio="xMidYMid meet"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              d="M4.136 3.012h15.729l-1.431 16.15l-6.451 1.826l-6.414-1.826l-1.433-16.15zm5.266 7.302l-.173-2.035l7.533.002l.173-1.963l-9.87-.002l.522 5.998h6.835l-.243 2.566l-2.179.602l-2.214-.605l-.141-1.58H7.691l.247 3.123L12 17.506l4.028-1.08l.558-6.111H9.402v-.001z"
                               fill=""
                             />
                           </svg>
@@ -1104,7 +847,7 @@ export default function Home() {
                         />
                       </div>
                       <div className="content-block">
-                        <h5 className="h5-title">Project Title</h5>
+                        <h5 className="h5-title">MultiPix</h5>
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit, sed do eiusmod tempor incididunt ut labore et
@@ -1158,7 +901,7 @@ export default function Home() {
                             viewBox="0 0 24 24"
                           >
                             <path
-                              d="M4.136 3.012h15.729l-1.431 16.15l-6.451 1.826l-6.414-1.826l-1.433-16.15zm5.266 7.302l-.173-2.035l7.533.002l.173-1.963l-9.87-.002l.522 5.998h6.835l-.243 2.566l-2.179.602l-2.214-.605l-.141-1.58H7.691l.247 3.123L12 17.506l4.028-1.08l.558-6.111H9.402v-.001z"
+                              d="M8.625 8.063V3h6.75v5.063h-6.75zm6.75 2.812H21V21H3V10.875h5.625v5.063h6.75v-5.063z"
                               fill=""
                             />
                           </svg>
@@ -1189,7 +932,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="content-section" id="projects-wrap">
+        <div className="content-section" id="challenges-wrap">
           <div className="container">
             <div className="content-wrapper">
               <div className="title-wrapper">
@@ -1599,7 +1342,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="content-section" id="projects-wrap">
+        <div className="content-section" id="contact-wrap">
           <div className="container">
             <div className="content-wrapper">
               <div className="contact-wrapper">
