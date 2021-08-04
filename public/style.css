@@ -918,6 +918,10 @@ ICONS
 CONTACT SECTION
 ------------------*/
 
+[aria-label="Present full Screen"] {
+  display: none;
+}
+
 .contact-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;

@@ -1549,8 +1549,10 @@ export default function Home() {
                   }}
                 >
                   <iframe
+                    featurepolicy={{ fullscreen: "self" }}
                     data-responsive="true"
-                    donotallowfullscreen="true"
+                    allowFullScreen={false}
+                    allow="fullscreen"
                     className="projectItemFrame"
                     loading="lazy"
                     style={{
