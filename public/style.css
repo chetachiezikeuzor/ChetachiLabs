@@ -5,6 +5,7 @@ VARIABLES
   --white: #f8f8f8;
   --blue: #0000ff;
   --blue-dark: #18182c;
+  --blue-dark-alpha-86: rgba(209, 234, 255, 0.9);
   --sleak-sky: #85d2ff;
   --sleak-bold: hsla(45, 5%, 86%, 100%);
   --sleak-medium: hsla(40, 5%, 89%, 100%);
@@ -54,15 +55,17 @@ MEDIA QUERIES
 ------------------*/
 
 @media screen and (max-width: 1290px) {
-  .nav-header ul.desktop-nav {
+  header.nav-header {
     display: none;
   }
 
-  header.nav-header {
-    background-color: unset;
-    border: unset;
-    backdrop-filter: unset;
-    -webkit-backdrop-filter: unset;
+  a.nav-link {
+    display: unset;
+    padding: unset;
+    font-size: 1.5em;
+  }
+  .nav-header ul {
+    justify-content: center;
   }
 }
 
@@ -84,7 +87,7 @@ MEDIA QUERIES
     margin-right: 32px;
   }
   div.content-wrapper {
-    padding: 32px;
+    padding: 22px;
   }
   div.grid-layout {
     display: grid;
@@ -96,6 +99,18 @@ MEDIA QUERIES
 }
 
 @media screen and (max-width: 852px) {
+  .nav-header ul.desktop-nav {
+    display: grid;
+  }
+  a.nav-link {
+    width: unset;
+    display: contents;
+  }
+
+  a.nav-link svg {
+    vertical-align: -0.125em;
+    margin-right: 12px;
+  }
   div.content-collection-grid {
     justify-items: center;
     -ms-grid-columns: 1fr;
@@ -103,7 +118,6 @@ MEDIA QUERIES
   }
   div.content-wrapper {
     padding-top: 60px;
-    padding: 48px;
   }
 }
 
@@ -170,7 +184,7 @@ MEDIA QUERIES
 }
 
 /*-----------------
-PRIMARY
+GLOBALS
 ------------------*/
 
 * {
@@ -185,12 +199,12 @@ PRIMARY
   box-sizing: border-box;
 }
 
-/*-----------------
-BODY AREA
-------------------*/
+body,
+body * {
+  font-family: var(--default-font);
+}
 
 body {
-  font-family: var(--default-font);
   min-height: 100vh;
   background-image: linear-gradient(
     to bottom right,
@@ -216,6 +230,11 @@ body::before {
   background-color: var(--sleak-sky);
   z-index: -1;
   opacity: 0.15;
+}
+
+a {
+  color: #181818;
+  margin: 0 6px;
 }
 
 /*-----------------
@@ -307,14 +326,14 @@ nav > ul {
   width: 90%;
   float: right;
   padding: 10px;
+  display: grid;
+  column-gap: 8px;
+  color: #181818;
   font-weight: 500;
   font-size: 1.05em;
   padding-left: 20px;
   padding-right: 20px;
   text-decoration: none;
-  display: grid;
-  column-gap: 8px;
-  color: #181818;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -413,6 +432,57 @@ MAIN ELEMENTS
 CONTENT SECTIONS
 ------------------*/
 
+.content-popover {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 150;
+}
+
+.cp-inner {
+  min-height: 100vh;
+  padding: 56px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  background-color: var(--blue-dark-alpha-86);
+}
+
+.cp-content {
+  background-color: var(--white-alpha-75);
+  padding: 30px;
+  border: 1px solid var(--white-alpha-40);
+  max-width: 924px;
+  width: 100%;
+  backdrop-filter: var(--backdrop-filter-blur);
+  -webkit-backdrop-filter: var(--backdrop-filter-blur);
+}
+
+.cp-head {
+  position: relative;
+}
+
+.cp-head h3 {
+  margin: 26px 0 15px 0;
+}
+
+.cp-head .button {
+  height: 58px;
+  width: 58px;
+  border-radius: 100%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -56px;
+  top: -56px;
+}
+
 .content-wrapper {
   position: relative;
   display: flex;
@@ -509,6 +579,7 @@ CONTENT BLOCKS
 .content-item {
   height: 100%;
   padding: 30px;
+  margin: 0 auto;
   transition: 300ms ease-in-out;
   text-decoration: none;
   background-color: var(--white-alpha-75);
@@ -765,6 +836,31 @@ ICONS
   border: 2px solid var(--white-alpha-75);
 }
 
+.link-icon-center {
+  border-radius: 100%;
+  background-color: var(--white-alpha-40);
+  border: 2px solid var(--white-alpha-75);
+  height: 36px;
+  width: 36px;
+  padding: 4px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.social-icons {
+  display: flex;
+  margin: 0 auto;
+}
+
+.footer-icon {
+  height: 1.2em;
+  width: 1.2em;
+  fill: #181818;
+}
+
 /*-----------------
 CONTACT SECTION
 ------------------*/
@@ -836,10 +932,6 @@ FOOTER SECTION
   align-items: center;
   display: grid;
   text-align: center;
-}
-
-.footer-section a {
-  font-style: italic;
 }
 
 .footer-title-block {

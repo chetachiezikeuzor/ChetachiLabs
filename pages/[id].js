@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import classNames from "classnames";
+import "regenerator-runtime/runtime";
 
 import { v4 as uuid } from "uuid";
 import { getDatabase, getPage, getBlocks } from "../lib/notion";
@@ -9,8 +10,6 @@ import Link from "next/link";
 import { databaseId } from "./blog.js";
 import { socialImage, url } from "../lib/config";
 import styles from "./post.module.css";
-
-var Gist = require("react-gist");
 
 export const Text = ({ text }) => {
   const colorMapper = {
@@ -41,6 +40,8 @@ export const Text = ({ text }) => {
     const id = uuid();
 
     var videoSource = ["https://www.youtube.com"];
+
+    var iframeSource = ["https://twitframe.com"];
 
     var imageSource = [
       "images.unsplash.com",
@@ -86,6 +87,8 @@ export const Text = ({ text }) => {
             allowFullScreen
           ></iframe>
         );
+      } else if (iframeSource.some((u) => text.link.url.includes(u))) {
+        return <iframe width="100%" height="600" src={text.link.url}></iframe>;
       }
     }
     if (text.content) {
