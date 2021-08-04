@@ -119,6 +119,9 @@ MEDIA QUERIES
   div.content-wrapper {
     padding-top: 60px;
   }
+  div.container {
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -139,8 +142,8 @@ MEDIA QUERIES
     width: 100%;
   }
   ul.circular-grid-layout {
-    width: 386px;
-    height: 386px;
+    width: 336px;
+    height: 336px;
     margin: 0 auto;
     margin-bottom: 52px;
   }
@@ -149,32 +152,32 @@ MEDIA QUERIES
     height: 85px;
   }
   li#circle-item-1 {
-    left: -20px;
-    top: 60px;
+    left: -10px;
+    top: 34px;
   }
   li#circle-item-2 {
-    left: -20px;
-    top: 228px;
+    left: -10px;
+    top: 200px;
   }
   li#circle-item-3 {
-    left: 148px;
+    left: 124px;
     bottom: -38px;
   }
   li#circle-item-4 {
-    top: 228px;
-    right: -20px;
+    top: 200px;
+    right: -16px;
   }
   li#circle-item-5 {
-    top: 60px;
-    right: -20px;
+    top: 34px;
+    right: -16px;
   }
   li#circle-item-6 {
     top: -38px;
-    right: 148px;
+    right: 120px;
   }
   li#circle-item-7 {
-    left: 148px;
-    top: 148px;
+    left: 124px;
+    top: 120px;
   }
   div.footer-end-block {
     grid-template-columns: 1fr;
@@ -366,11 +369,6 @@ section {
   margin: 0 auto;
 }
 
-.container {
-  padding: 0 40px;
-  width: 100%;
-}
-
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -426,6 +424,8 @@ MAIN ELEMENTS
   max-width: 1060px;
   margin-right: auto;
   margin-left: auto;
+  padding: 0 40px;
+  width: 100%;
 }
 
 /*-----------------
