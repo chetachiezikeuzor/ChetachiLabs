@@ -5,8 +5,8 @@ VARIABLES
   --white: #f8f8f8;
   --blue: #0000ff;
   --blue-dark: #18182c;
-  --blue-dark-alpha-86: rgba(209, 234, 255, 0.9);
-  --sleak-sky: #85d2ff;
+  --blue-dark-alpha-86: rgba(209, 227, 255, 0.8);
+  --sleak-sky: #85c8ff;
   --sleak-bold: hsla(45, 5%, 86%, 100%);
   --sleak-medium: hsla(40, 5%, 89%, 100%);
   --pink-light: hsl(292, 57%, 97%);
@@ -416,6 +416,14 @@ HOME AREA
 MAIN ELEMENTS
 ------------------*/
 
+.main {
+  transition: all 0.46s ease-in-out;
+}
+
+.main.fade-away {
+  opacity: 0;
+}
+
 .content-section {
   overflow: hidden;
   padding: 100px 3%;
@@ -442,12 +450,27 @@ CONTENT SECTIONS
   height: 100%;
   width: 100%;
   z-index: 150;
+  visibility: hidden;
+}
+
+.content-popover.open {
+  visibility: visible;
+  overflow-y: auto;
+}
+
+.content-popover.close {
+  visibility: hidden;
+  overflow-y: unset;
+}
+
+.content-item .cp-content {
+  display: none;
 }
 
 .cp-inner {
   min-height: 100vh;
-  padding: 56px 36px;
   display: flex;
+  padding: 28px;
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(5px);
@@ -457,12 +480,20 @@ CONTENT SECTIONS
 
 .cp-content {
   background-color: var(--white-alpha-75);
-  padding: 30px;
+  padding: 42px;
+  opacity: 0;
   border: 1px solid var(--white-alpha-40);
   max-width: 924px;
   width: 100%;
+  transform: scale(0.9);
   backdrop-filter: var(--backdrop-filter-blur);
   -webkit-backdrop-filter: var(--backdrop-filter-blur);
+}
+
+.content-popover.open .cp-content {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.46s ease-in-out;
 }
 
 .cp-head {
@@ -470,20 +501,39 @@ CONTENT SECTIONS
 }
 
 .cp-head h3 {
-  margin: 26px 0 15px 0;
+  margin: 18px 0 15px 0;
+}
+
+.cp-list ul {
+  margin: 8px 0 6px 0;
+  list-style-type: none;
+}
+
+.cp-list ul li {
+  margin-bottom: 8px;
+}
+
+.accent-link {
+  color: blue;
+  margin: 0;
+}
+
+.modal-buttons .button {
+  height: 42px;
+  margin: 0 0px 0 22px;
 }
 
 .cp-head .button {
-  height: 58px;
-  width: 58px;
+  height: 62px;
+  width: 62px;
   border-radius: 100%;
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  right: -56px;
-  top: -56px;
+  right: -68px;
+  top: -68px;
 }
 
 .content-wrapper {
