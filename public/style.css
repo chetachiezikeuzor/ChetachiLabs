@@ -128,6 +128,9 @@ MEDIA QUERIES
   div.contact-wrapper {
     grid-template-columns: 1fr;
   }
+  section.home-section {
+    padding: 20px;
+  }
   .header-title-block {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
