@@ -2,10 +2,9 @@ import Head from "next/head";
 import React from "react";
 import { useRouter } from "next/router";
 import { Helmet } from "react-helmet";
+import Cookies from "universal-cookie";
 
 export default function Home() {
-  const router = useRouter();
-
   const handleClick = (e, path) => {
     if (path === "/about") {
       document.querySelector(".content-popover").classList.toggle("open");
@@ -31,6 +30,7 @@ export default function Home() {
       document.querySelector(".content-popover").classList.toggle("open");
     }
   };
+
   return (
     <div className="main">
       <Head>
@@ -173,9 +173,14 @@ export default function Home() {
                 <p>Hello, I'm</p>
                 <h1>Chetachi Ezikeuzor,</h1>
                 <h2>a Software Developer & Designer</h2>
-                <button className="button" style={{ marginTop: "15px" }}>
-                  Say hello!
-                </button>
+                <a href="mailto:chetachiezikeuzor@gmail.com">
+                  <button
+                    className="button"
+                    style={{ marginTop: "15px", display: "unset" }}
+                  >
+                    Say hello!
+                  </button>
+                </a>
               </div>
               <div className="home-img">
                 <div className="img-box">
@@ -672,7 +677,7 @@ export default function Home() {
                     role="listitem"
                     className="collection-content-item w-dyn-item"
                   >
-                    <a href="#" className="content-item w-inline-block">
+                    <div className="content-item w-inline-block">
                       <div className="content-image-wrap">
                         <img
                           src="https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/light2.png?raw=true"
@@ -709,13 +714,51 @@ export default function Home() {
                           </svg>
                         </div>
                       </div>
-                    </a>
+                      <button
+                        className="open-project button"
+                        onClick={(e) => handleClick(e, "/about")}
+                        id="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEmLDMEw8E&#x2F;view?embed"
+                      >
+                        View Preview
+                      </button>
+                      <div className="cp-content">
+                        <div className="content-details">
+                          <p>
+                            Flu ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                          </p>
+                        </div>
+                        <div className="cp-list">
+                          <ul>
+                            <li>Type - Application Plugin</li>
+                            <li>Technologies used - TypeScript, CSS</li>
+                            <li>
+                              Links -{" "}
+                              <a className="accent-link" href="#">
+                                Documentation
+                              </a>
+                              ,{" "}
+                              <a className="accent-link" href="#">
+                                Repository
+                              </a>
+                              ,{" "}
+                              <a className="accent-link" href="#">
+                                Code
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div
                     role="listitem"
                     className="collection-content-item w-dyn-item"
                   >
-                    <a href="#" className="content-item w-inline-block">
+                    <div className="content-item w-inline-block">
                       <div className="content-image-wrap">
                         <img
                           src="img/cMenu Demo Header.png"
@@ -786,13 +829,51 @@ export default function Home() {
                           </svg>
                         </div>
                       </div>
-                    </a>
+                      <button
+                        className="open-project button"
+                        onClick={(e) => handleClick(e, "/about")}
+                        id="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEmLKvYqGo&#x2F;view?embed"
+                      >
+                        View Preview
+                      </button>
+                      <div className="cp-content">
+                        <div className="content-details">
+                          <p>
+                            Flu ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                          </p>
+                        </div>
+                        <div className="cp-list">
+                          <ul>
+                            <li>Type - Application Plugin</li>
+                            <li>Technologies used - TypeScript, CSS</li>
+                            <li>
+                              Links -{" "}
+                              <a className="accent-link" href="#">
+                                Documentation
+                              </a>
+                              ,{" "}
+                              <a className="accent-link" href="#">
+                                Repository
+                              </a>
+                              ,{" "}
+                              <a className="accent-link" href="#">
+                                Code
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div
                     role="listitem"
                     className="collection-content-item w-dyn-item"
                   >
-                    <a href="#" className="content-item w-inline-block">
+                    <div className="content-item w-inline-block">
                       <div className="content-image-wrap">
                         <img
                           src="img/highlightr.png"
@@ -863,13 +944,51 @@ export default function Home() {
                           </svg>
                         </div>
                       </div>
-                    </a>
+                      <button
+                        className="open-project button"
+                        onClick={(e) => handleClick(e, "/about")}
+                        id="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEmLNAbhjI&#x2F;view?embed"
+                      >
+                        View Preview
+                      </button>
+                      <div className="cp-content">
+                        <div className="content-details">
+                          <p>
+                            Flu ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                          </p>
+                        </div>
+                        <div className="cp-list">
+                          <ul>
+                            <li>Type - Application Plugin</li>
+                            <li>Technologies used - TypeScript, CSS</li>
+                            <li>
+                              Links -{" "}
+                              <a className="accent-link" href="#">
+                                Documentation
+                              </a>
+                              ,{" "}
+                              <a className="accent-link" href="#">
+                                Repository
+                              </a>
+                              ,{" "}
+                              <a className="accent-link" href="#">
+                                Code
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div
                     role="listitem"
                     className="collection-content-item w-dyn-item"
                   >
-                    <a href="#" className="content-item w-inline-block">
+                    <div className="content-item w-inline-block">
                       <div className="content-image-wrap">
                         <img
                           src="img/Highlightr Demo Header.png"
@@ -957,7 +1076,45 @@ export default function Home() {
                           </svg>
                         </div>
                       </div>
-                    </a>
+                      <button
+                        className="open-project button"
+                        onClick={(e) => handleClick(e, "/about")}
+                        id="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEmLOVpRa4&#x2F;view?embed"
+                      >
+                        View Preview
+                      </button>
+                      <div className="cp-content">
+                        <div className="content-details">
+                          <p>
+                            Flu ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                          </p>
+                        </div>
+                        <div className="cp-list">
+                          <ul>
+                            <li>Type - Application Plugin</li>
+                            <li>Technologies used - TypeScript, CSS</li>
+                            <li>
+                              Links -{" "}
+                              <a className="accent-link" href="#">
+                                Documentation
+                              </a>
+                              ,{" "}
+                              <a className="accent-link" href="#">
+                                Repository
+                              </a>
+                              ,{" "}
+                              <a className="accent-link" href="#">
+                                Code
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1089,7 +1246,9 @@ export default function Home() {
                         className="open-project button"
                         onClick={(e) => handleClick(e, "/about")}
                         id="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEYR6Jm2PI&#x2F;view?embed"
-                      ></button>
+                      >
+                        View Preview
+                      </button>
                       <div className="cp-content">
                         <div className="content-details">
                           <p>
@@ -1127,7 +1286,7 @@ export default function Home() {
                     role="listitem"
                     className="collection-content-item w-dyn-item"
                   >
-                    <a className="content-item w-inline-block">
+                    <div className="content-item w-inline-block">
                       <div className="content-image-wrap">
                         <img
                           src="img/cMenu Demo Header.png"
@@ -1219,8 +1378,41 @@ export default function Home() {
                         className="open-project button"
                         onClick={(e) => handleClick(e, "/about")}
                         id="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEmFkylX8o&#x2F;view?embed"
-                      ></button>
-                    </a>
+                      >
+                        View Preview
+                      </button>
+                      <div className="cp-content">
+                        <div className="content-details">
+                          <p>
+                            Flu ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                          </p>
+                        </div>
+                        <div className="cp-list">
+                          <ul>
+                            <li>Type - Application Plugin</li>
+                            <li>Technologies used - TypeScript, CSS</li>
+                            <li>
+                              Links -{" "}
+                              <a className="accent-link" href="#">
+                                Documentation
+                              </a>
+                              ,{" "}
+                              <a className="accent-link" href="#">
+                                Repository
+                              </a>
+                              ,{" "}
+                              <a className="accent-link" href="#">
+                                Code
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1242,25 +1434,28 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="w-form">
+                <div className="chetachi-form">
                   <form
-                    id="wf-form-Contact-Form"
-                    name="wf-form-Contact-Form"
+                    action="mailto:chetachiezikeuzor@gmail.com"
+                    method="post"
+                    encType="text/plain"
+                    id="chetachi-form-Contact-Form"
+                    name="chetachi-form-Contact-Form"
                     data-name="Contact Form"
                   >
                     <h4 className="h4-title">Contact me for a project!</h4>
                     <input
                       type="text"
-                      className="input-field-large w-input"
+                      className="input-field-large chetachi-form-input"
                       maxLength="256"
-                      name="name"
+                      name="Name"
                       data-name="Name"
                       placeholder="Enter your name"
-                      id="name"
+                      id="Name"
                     ></input>
                     <input
                       type="email"
-                      className="input-field-large w-input"
+                      className="input-field-large chetachi-form-input"
                       maxLength="256"
                       name="Email"
                       data-name="Email"
@@ -1269,7 +1464,7 @@ export default function Home() {
                     ></input>
                     <input
                       type="text"
-                      className="input-field-large w-input"
+                      className="input-field-large chetachi-form-input"
                       maxLength="256"
                       name="Business-Name"
                       data-name="Business Name"
@@ -1278,7 +1473,7 @@ export default function Home() {
                     ></input>
                     <input
                       type="text"
-                      className="input-field-large w-input"
+                      className="input-field-large chetachi-form-input"
                       maxLength="256"
                       name="Phone-Number"
                       data-name="Phone Number"
@@ -1286,9 +1481,9 @@ export default function Home() {
                       id="Phone-Number"
                     ></input>
                     <textarea
-                      form="wf-form-Contact-Form"
-                      name="taname"
-                      id="contact-form-text-area"
+                      form="chetachi-form-Contact-Form"
+                      name="Content-Form-Text-Area"
+                      id="Content-Form-Text-Area"
                       cols="35"
                       wrap="soft"
                     ></textarea>
@@ -1299,10 +1494,10 @@ export default function Home() {
                       className="button button-full w-button"
                     ></input>
                   </form>
-                  <div className="success-message w-form-done">
+                  <div className="success-message chetachi-form-done">
                     <div>Thank you! Your submission has been received!</div>
                   </div>
-                  <div className="w-form-fail">
+                  <div className="chetachi-form-fail">
                     <div>
                       Oops! Something went wrong while submitting the form.
                     </div>
@@ -1354,6 +1549,8 @@ export default function Home() {
                   }}
                 >
                   <iframe
+                    data-responsive="true"
+                    donotallowfullscreen="true"
                     className="projectItemFrame"
                     loading="lazy"
                     style={{
@@ -1366,7 +1563,6 @@ export default function Home() {
                       margin: "0",
                       height: "100%",
                     }}
-                    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEYR6Jm2PI&#x2F;view?embed"
                   ></iframe>
                 </div>
               </div>

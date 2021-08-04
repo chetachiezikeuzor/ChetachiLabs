@@ -20,6 +20,7 @@
     "react-meta-tags": "^1.0.1",
     "react-use-color-mode": "^1.3.0",
     "regenerator-runtime": "^0.13.9",
+    "universal-cookie": "^4.0.4",
     "uuid": "^8.3.2"
   },
   "devDependencies": {

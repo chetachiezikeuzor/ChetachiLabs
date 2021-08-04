@@ -845,7 +845,7 @@ TECHNOLOGIES WRAP
 ------------------*/
 
 .technologies-wrapper.padding-top-32 {
-  margin-top: 32px;
+  margin: 23px 0;
 }
 
 .technologies-wrapper {
@@ -923,9 +923,10 @@ CONTACT SECTION
   grid-template-columns: 1fr 1fr;
 }
 
-.w-form {
+.chetachi-form {
   margin: 0 0 15px;
 }
+
 form {
   display: block;
   margin-top: 0em;
@@ -944,9 +945,9 @@ h4 {
   letter-spacing: -0.03em;
 }
 
-.w-input,
-.w-select,
-#contact-form-text-area {
+.chetachi-form-input,
+.form-select,
+#Content-Form-Text-Area {
   display: block;
   width: 100%;
   padding: 1.2em 0.5em;
@@ -963,14 +964,14 @@ h4 {
   color: #fff;
 }
 
-.w-form-done {
+.chetachi-form-done {
   display: none;
   padding: 20px;
   text-align: center;
   background-color: #dddddd;
 }
 
-.w-form-fail {
+.chetachi-form-fail {
   display: none;
   margin-top: 10px;
   padding: 10px;
