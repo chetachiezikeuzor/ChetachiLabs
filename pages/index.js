@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="main">
       <Head>
-        <title>Chetachi's Portfolio Site ❤️</title>
+        <title>Chetachi's Portfolio</title>
         <link rel="icon" href="/c-icon.png" />
 
         <link rel="stylesheet" href="/style.css" />
