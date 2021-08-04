@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "@nishans/idz": "0.0.19",
-    "@notionhq/client": "^0.2.3",
     "classnames": "^2.2.6",
     "next": "^11.0.0",
     "react": "17.0.2",
@@ -17,7 +16,6 @@
     "react-embed-gist": "^1.0.11",
     "react-gist": "^1.2.2",
     "react-meta-tags": "^1.0.1",
-    "react-notion-x": "^4.8.2",
     "react-use-color-mode": "^1.3.0",
     "regenerator-runtime": "^0.13.9",
     "uuid": "^8.3.2"
