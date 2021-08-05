@@ -493,7 +493,7 @@ CONTENT SECTIONS
 .content-popover.open .cp-content {
   opacity: 1;
   transform: scale(1);
-  transition: all 0.46s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 .cp-head {

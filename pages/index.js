@@ -22,7 +22,7 @@ export default function Home() {
       projectItem.querySelector(".h5-title").innerHTML;
 
     document.querySelector(".cp-body").innerHTML =
-      projectItem.querySelector(".content-details").innerHTML;
+      projectItem.querySelector(".cp-content").innerHTML;
   }
 
   const popoverClose = (e, path) => {
@@ -417,228 +417,6 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="content-section" id="applications-section">
-          <div className="container">
-            <div className="content-wrapper">
-              <div className="title-wrapper">
-                <div className="header-title-block">
-                  <div className="header-accent-wrap">
-                    <h3 className="h3-large-title">
-                      Full Stack
-                      <br />
-                      Applications
-                    </h3>
-                  </div>
-                  <p className="paragraph-width">
-                    Here are a few of some of the applications I've built. I've
-                    also provided links to the source code on my GitHub.
-                  </p>
-                </div>
-                <a href="/about" className="button w-button">
-                  See More
-                </a>
-              </div>
-              <div className="background-block-content"></div>
-              <div className="w-dyn-list">
-                <div
-                  id="contents"
-                  role="list"
-                  className="content-collection-grid w-dyn-items"
-                >
-                  <div
-                    role="listitem"
-                    className="collection-content-item w-dyn-item"
-                  >
-                    <a href="#" className="content-item w-inline-block">
-                      <div className="content-image-wrap">
-                        <img
-                          src="img/highlightr.png"
-                          loading="lazy"
-                          alt=""
-                          sizes="(max-width: 479px) 86vw, (max-width: 767px) 77vw, (max-width: 991px) 430px, 37vw"
-                          className="image-full"
-                        />
-                      </div>
-                      <div className="content-block">
-                        <h5 className="h5-title">Project Title</h5>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.
-                        </p>
-                      </div>
-                      <div className="technologies-wrapper padding-top-32">
-                        <div className="technologies-ava">
-                          <svg
-                            className="technology-icon"
-                            xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true"
-                            focusable="false"
-                            width="1em"
-                            height="1em"
-                            preserveAspectRatio="xMidYMid meet"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              d="M3 3h18v18H3V3m10.71 14.86c.5.98 1.51 1.73 3.09 1.73c1.6 0 2.8-.83 2.8-2.36c0-1.41-.81-2.04-2.25-2.66l-.42-.18c-.73-.31-1.04-.52-1.04-1.02c0-.41.31-.73.81-.73c.48 0 .8.21 1.09.73l1.31-.87c-.55-.96-1.33-1.33-2.4-1.33c-1.51 0-2.48.96-2.48 2.23c0 1.38.81 2.03 2.03 2.55l.42.18c.78.34 1.24.55 1.24 1.13c0 .48-.45.83-1.15.83c-.83 0-1.31-.43-1.67-1.03l-1.38.8M13 11.25H8v1.5h1.5V20h1.75v-7.25H13v-1.5z"
-                              fill=""
-                            />
-                          </svg>
-                        </div>
-                        <div className="technologies-ava">
-                          <svg
-                            className="technology-icon"
-                            xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true"
-                            focusable="false"
-                            width="1em"
-                            height="1em"
-                            preserveAspectRatio="xMidYMid meet"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              d="M3 3h18v18H3V3m4.73 15.04c.4.85 1.19 1.55 2.54 1.55c1.5 0 2.53-.8 2.53-2.55v-5.78h-1.7V17c0 .86-.35 1.08-.9 1.08c-.58 0-.82-.4-1.09-.87l-1.38.83m5.98-.18c.5.98 1.51 1.73 3.09 1.73c1.6 0 2.8-.83 2.8-2.36c0-1.41-.81-2.04-2.25-2.66l-.42-.18c-.73-.31-1.04-.52-1.04-1.02c0-.41.31-.73.81-.73c.48 0 .8.21 1.09.73l1.31-.87c-.55-.96-1.33-1.33-2.4-1.33c-1.51 0-2.48.96-2.48 2.23c0 1.38.81 2.03 2.03 2.55l.42.18c.78.34 1.24.55 1.24 1.13c0 .48-.45.83-1.15.83c-.83 0-1.31-.43-1.67-1.03l-1.38.8z"
-                              fill=""
-                            />
-                          </svg>
-                        </div>
-                        <div className="technologies-ava">
-                          <svg
-                            className="technology-icon"
-                            xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true"
-                            focusable="false"
-                            width="1em"
-                            height="1em"
-                            preserveAspectRatio="xMidYMid meet"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              d="M4.136 3.012h15.729l-1.431 16.15l-6.451 1.826l-6.414-1.826l-1.433-16.15zm5.266 7.302l-.173-2.035l7.533.002l.173-1.963l-9.87-.002l.522 5.998h6.835l-.243 2.566l-2.179.602l-2.214-.605l-.141-1.58H7.691l.247 3.123L12 17.506l4.028-1.08l.558-6.111H9.402v-.001z"
-                              fill=""
-                            />
-                          </svg>
-                        </div>
-                        <div className="technologies-ava">
-                          <svg
-                            className="technology-icon"
-                            xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true"
-                            focusable="false"
-                            width="1em"
-                            height="1em"
-                            preserveAspectRatio="xMidYMid meet"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              d="M4.192 3.143h15.615l-1.42 16.034l-6.404 1.812l-6.369-1.813L4.192 3.143zM16.9 6.424l-9.8-.002l.158 1.949l7.529.002l-.189 2.02H9.66l.179 1.913h4.597l-.272 2.62l-2.164.598l-2.197-.603l-.141-1.569h-1.94l.216 2.867L12 17.484l3.995-1.137l.905-9.923z"
-                              fill=""
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div
-                    role="listitem"
-                    className="collection-content-item w-dyn-item"
-                  >
-                    <a href="#" className="content-item w-inline-block">
-                      <div className="content-image-wrap">
-                        <img
-                          src="img/Highlightr Demo Header.png"
-                          loading="lazy"
-                          alt=""
-                          sizes="(max-width: 479px) 86vw, (max-width: 767px) 77vw, (max-width: 991px) 430px, 37vw"
-                          className="image-full"
-                        />
-                      </div>
-                      <div className="content-block">
-                        <h5 className="h5-title">Project Title</h5>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.
-                        </p>
-                      </div>
-                      <div className="technologies-wrapper padding-top-32">
-                        <div className="technologies-ava">
-                          <svg
-                            className="technology-icon"
-                            xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true"
-                            focusable="false"
-                            width="1em"
-                            height="1em"
-                            preserveAspectRatio="xMidYMid meet"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              d="M3 3h18v18H3V3m10.71 14.86c.5.98 1.51 1.73 3.09 1.73c1.6 0 2.8-.83 2.8-2.36c0-1.41-.81-2.04-2.25-2.66l-.42-.18c-.73-.31-1.04-.52-1.04-1.02c0-.41.31-.73.81-.73c.48 0 .8.21 1.09.73l1.31-.87c-.55-.96-1.33-1.33-2.4-1.33c-1.51 0-2.48.96-2.48 2.23c0 1.38.81 2.03 2.03 2.55l.42.18c.78.34 1.24.55 1.24 1.13c0 .48-.45.83-1.15.83c-.83 0-1.31-.43-1.67-1.03l-1.38.8M13 11.25H8v1.5h1.5V20h1.75v-7.25H13v-1.5z"
-                              fill=""
-                            />
-                          </svg>
-                        </div>
-                        <div className="technologies-ava">
-                          <svg
-                            className="technology-icon"
-                            xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true"
-                            focusable="false"
-                            width="1em"
-                            height="1em"
-                            preserveAspectRatio="xMidYMid meet"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              d="M3 3h18v18H3V3m4.73 15.04c.4.85 1.19 1.55 2.54 1.55c1.5 0 2.53-.8 2.53-2.55v-5.78h-1.7V17c0 .86-.35 1.08-.9 1.08c-.58 0-.82-.4-1.09-.87l-1.38.83m5.98-.18c.5.98 1.51 1.73 3.09 1.73c1.6 0 2.8-.83 2.8-2.36c0-1.41-.81-2.04-2.25-2.66l-.42-.18c-.73-.31-1.04-.52-1.04-1.02c0-.41.31-.73.81-.73c.48 0 .8.21 1.09.73l1.31-.87c-.55-.96-1.33-1.33-2.4-1.33c-1.51 0-2.48.96-2.48 2.23c0 1.38.81 2.03 2.03 2.55l.42.18c.78.34 1.24.55 1.24 1.13c0 .48-.45.83-1.15.83c-.83 0-1.31-.43-1.67-1.03l-1.38.8z"
-                              fill=""
-                            />
-                          </svg>
-                        </div>
-                        <div className="technologies-ava">
-                          <svg
-                            className="technology-icon"
-                            xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true"
-                            focusable="false"
-                            width="1em"
-                            height="1em"
-                            preserveAspectRatio="xMidYMid meet"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              d="M4.136 3.012h15.729l-1.431 16.15l-6.451 1.826l-6.414-1.826l-1.433-16.15zm5.266 7.302l-.173-2.035l7.533.002l.173-1.963l-9.87-.002l.522 5.998h6.835l-.243 2.566l-2.179.602l-2.214-.605l-.141-1.58H7.691l.247 3.123L12 17.506l4.028-1.08l.558-6.111H9.402v-.001z"
-                              fill=""
-                            />
-                          </svg>
-                        </div>
-                        <div className="technologies-ava">
-                          <svg
-                            className="technology-icon"
-                            xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true"
-                            focusable="false"
-                            width="1em"
-                            height="1em"
-                            preserveAspectRatio="xMidYMid meet"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              d="M4.192 3.143h15.615l-1.42 16.034l-6.404 1.812l-6.369-1.813L4.192 3.143zM16.9 6.424l-9.8-.002l.158 1.949l7.529.002l-.189 2.02H9.66l.179 1.913h4.597l-.272 2.62l-2.164.598l-2.197-.603l-.141-1.569h-1.94l.216 2.867L12 17.484l3.995-1.137l.905-9.923z"
-                              fill=""
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div className="content-section" id="contributions-wrap">
           <div className="container">
             <div className="content-wrapper">
@@ -662,9 +440,6 @@ export default function Home() {
                     community.
                   </p>
                 </div>
-                <a href="/about" className="button w-button">
-                  See More
-                </a>
               </div>
               <div className="background-block-content"></div>
               <div className="w-dyn-list">
@@ -690,9 +465,9 @@ export default function Home() {
                       <div className="content-block">
                         <h5 className="h5-title">Yin & Yang Theme</h5>
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.
+                          An Obsidian.md theme with a stark contrast between
+                          dark mode and light mode, much like the Yin and Yang
+                          symbol ☯️.
                         </p>
                       </div>
                       <div className="technologies-wrapper padding-top-32">
@@ -723,6 +498,11 @@ export default function Home() {
                       </button>
                       <div className="cp-content">
                         <div className="content-details">
+                          <div
+                            style={{ display: "flex", marginBottom: "12px" }}
+                          >
+                            <img src="https://img.shields.io/github/stars/chetachiezikeuzor/Yin-and-Yang-Theme"></img>
+                          </div>
                           <p>
                             Flu ipsum dolor sit amet, consectetur adipiscing
                             elit, sed do eiusmod tempor incididunt ut labore et
@@ -733,19 +513,23 @@ export default function Home() {
                         </div>
                         <div className="cp-list">
                           <ul>
-                            <li>Type - Application Plugin</li>
-                            <li>Technologies used - TypeScript, CSS</li>
+                            <li>Type - Application Theme</li>
+                            <li>Technologies - CSS</li>
                             <li>
                               Links -{" "}
-                              <a className="accent-link" href="#">
+                              <a
+                                className="accent-link"
+                                target="_blank"
+                                href="https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme"
+                              >
                                 Documentation
                               </a>
                               ,{" "}
-                              <a className="accent-link" href="#">
-                                Repository
-                              </a>
-                              ,{" "}
-                              <a className="accent-link" href="#">
+                              <a
+                                className="accent-link"
+                                target="_blank"
+                                href="https://raw.githubusercontent.com/chetachiezikeuzor/Yin-and-Yang-Theme/main/obsidian.css"
+                              >
                                 Code
                               </a>
                             </li>
@@ -771,9 +555,9 @@ export default function Home() {
                       <div className="content-block">
                         <h5 className="h5-title">cMenu</h5>
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.
+                          An Obsidian.md plugin that adds a minimal text editor
+                          modal for a smoother and more effective
+                          writing/editing experience ✍🏽.
                         </p>
                       </div>
                       <div className="technologies-wrapper padding-top-32">
@@ -838,29 +622,36 @@ export default function Home() {
                       </button>
                       <div className="cp-content">
                         <div className="content-details">
-                          <p>
-                            Flu ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua.
-                          </p>
+                          <div
+                            style={{ display: "flex", marginBottom: "12px" }}
+                          >
+                            <img src="https://img.shields.io/github/downloads/chetachiezikeuzor/cMenu-Plugin/total.svg"></img>
+                            <img src="https://img.shields.io/github/v/release/chetachiezikeuzor/cMenu-Plugin"></img>
+                          </div>
+                          <p>cMenu...</p>
                         </div>
                         <div className="cp-list">
                           <ul>
                             <li>Type - Application Plugin</li>
-                            <li>Technologies used - TypeScript, CSS</li>
+                            <li>
+                              Technologies used - CSS, TypeScript, JavaScript,
+                              Obsidian API
+                            </li>
                             <li>
                               Links -{" "}
-                              <a className="accent-link" href="#">
+                              <a
+                                className="accent-link"
+                                target="_blank"
+                                href="https://github.com/chetachiezikeuzor/cMenu-Plugin"
+                              >
                                 Documentation
                               </a>
                               ,{" "}
-                              <a className="accent-link" href="#">
-                                Repository
-                              </a>
-                              ,{" "}
-                              <a className="accent-link" href="#">
+                              <a
+                                className="accent-link"
+                                target="_blank"
+                                href="https://raw.githubusercontent.com/chetachiezikeuzor/cMenu-Plugin/master/main.ts"
+                              >
                                 Code
                               </a>
                             </li>
@@ -886,9 +677,9 @@ export default function Home() {
                       <div className="content-block">
                         <h5 className="h5-title">Highlightr</h5>
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.
+                          An Obsidian.md plugin that adds a simple highlighting
+                          modal for better multi-colored highlighting support
+                          🎨.
                         </p>
                       </div>
                       <div className="technologies-wrapper padding-top-32">
@@ -953,29 +744,35 @@ export default function Home() {
                       </button>
                       <div className="cp-content">
                         <div className="content-details">
-                          <p>
-                            Flu ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua.
-                          </p>
+                          <div
+                            style={{ display: "flex", marginBottom: "12px" }}
+                          >
+                            <img src="https://img.shields.io/github/stars/chetachiezikeuzor/Highlightr-Plugin"></img>
+                          </div>
+                          <p>Highlightr...</p>
                         </div>
                         <div className="cp-list">
                           <ul>
                             <li>Type - Application Plugin</li>
-                            <li>Technologies used - TypeScript, CSS</li>
+                            <li>
+                              Technologies used - CSS, TypeScript, JavaScript,
+                              Obsidian API
+                            </li>
                             <li>
                               Links -{" "}
-                              <a className="accent-link" href="#">
+                              <a
+                                target="_blank"
+                                className="accent-link"
+                                href="https://github.com/chetachiezikeuzor/Highlightr-Plugin"
+                              >
                                 Documentation
                               </a>
                               ,{" "}
-                              <a className="accent-link" href="#">
-                                Repository
-                              </a>
-                              ,{" "}
-                              <a className="accent-link" href="#">
+                              <a
+                                target="_blank"
+                                className="accent-link"
+                                href="https://raw.githubusercontent.com/chetachiezikeuzor/Highlightr-Plugin/master/main.ts"
+                              >
                                 Code
                               </a>
                             </li>
@@ -1001,9 +798,9 @@ export default function Home() {
                       <div className="content-block">
                         <h5 className="h5-title">MultiPix</h5>
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.
+                          An Obsidian.md plugin that brings Unsplash, the
+                          largest open collection of high-quality photos, into
+                          Obsidian for a better image-use workflow 🌄.
                         </p>
                       </div>
                       <div className="technologies-wrapper padding-top-32">
@@ -1085,29 +882,30 @@ export default function Home() {
                       </button>
                       <div className="cp-content">
                         <div className="content-details">
-                          <p>
-                            Flu ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua.
-                          </p>
+                          <p>MultiPix...</p>
                         </div>
                         <div className="cp-list">
                           <ul>
                             <li>Type - Application Plugin</li>
-                            <li>Technologies used - TypeScript, CSS</li>
+                            <li>
+                              Technologies used - CSS, TypeScript, JavaScript,
+                              Obsidian API
+                            </li>
                             <li>
                               Links -{" "}
-                              <a className="accent-link" href="#">
+                              <a
+                                target="_blank"
+                                className="accent-link"
+                                href="https://github.com/chetachiezikeuzor/MultiPix-Plugin"
+                              >
                                 Documentation
                               </a>
                               ,{" "}
-                              <a className="accent-link" href="#">
-                                Repository
-                              </a>
-                              ,{" "}
-                              <a className="accent-link" href="#">
+                              <a
+                                target="_blank"
+                                className="accent-link"
+                                href="https://raw.githubusercontent.com/chetachiezikeuzor/MultiPix-Plugin/master/main.ts"
+                              >
                                 Code
                               </a>
                             </li>
@@ -1135,13 +933,10 @@ export default function Home() {
                     </h3>
                   </div>
                   <p className="paragraph-width">
-                    These are a few projects I've worked on in contribution to
-                    open source tools.
+                    I like to practice tackling coding challenges to better my
+                    skills. Here are a few that I've turned into mini apps.
                   </p>
                 </div>
-                <a href="/about" className="button w-button">
-                  See More
-                </a>
               </div>
               <div className="background-block-content"></div>
               <div className="w-dyn-list">
@@ -1165,7 +960,7 @@ export default function Home() {
                         />
                       </div>
                       <div className="content-block">
-                        <h5 className="h5-title">Project 1</h5>
+                        <h5 className="h5-title">FizzBuzz</h5>
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit, sed do eiusmod tempor incididunt ut labore et
@@ -1242,44 +1037,11 @@ export default function Home() {
                           </svg>
                         </div>
                       </div>
-                      <button
-                        className="open-project button"
-                        onClick={(e) => handleClick(e, "/about")}
-                        id="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEYR6Jm2PI&#x2F;view?embed"
-                      >
-                        View Preview
-                      </button>
-                      <div className="cp-content">
-                        <div className="content-details">
-                          <p>
-                            Flu ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua.
-                          </p>
-                        </div>
-                        <div className="cp-list">
-                          <ul>
-                            <li>Type - Application Plugin</li>
-                            <li>Technologies used - TypeScript, CSS</li>
-                            <li>
-                              Links -{" "}
-                              <a className="accent-link" href="#">
-                                Documentation
-                              </a>
-                              ,{" "}
-                              <a className="accent-link" href="#">
-                                Repository
-                              </a>
-                              ,{" "}
-                              <a className="accent-link" href="#">
-                                Code
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
+                      <a href="#">
+                        <button className="button" style={{ display: "unset" }}>
+                          See Demo
+                        </button>
+                      </a>
                     </div>
                   </div>
                   <div
@@ -1297,7 +1059,7 @@ export default function Home() {
                         />
                       </div>
                       <div className="content-block">
-                        <h5 className="h5-title">Project 2</h5>
+                        <h5 className="h5-title">Find The Palindrome</h5>
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit, sed do eiusmod tempor incididunt ut labore et
@@ -1374,44 +1136,15 @@ export default function Home() {
                           </svg>
                         </div>
                       </div>
-                      <button
-                        className="open-project button"
-                        onClick={(e) => handleClick(e, "/about")}
-                        id="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEmFkylX8o&#x2F;view?embed"
+
+                      <a
+                        target="_blank"
+                        href="https://find-the-palindrome.netlify.app/"
                       >
-                        View Preview
-                      </button>
-                      <div className="cp-content">
-                        <div className="content-details">
-                          <p>
-                            Flu ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua.
-                          </p>
-                        </div>
-                        <div className="cp-list">
-                          <ul>
-                            <li>Type - Application Plugin</li>
-                            <li>Technologies used - TypeScript, CSS</li>
-                            <li>
-                              Links -{" "}
-                              <a className="accent-link" href="#">
-                                Documentation
-                              </a>
-                              ,{" "}
-                              <a className="accent-link" href="#">
-                                Repository
-                              </a>
-                              ,{" "}
-                              <a className="accent-link" href="#">
-                                Code
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
+                        <button className="button" style={{ display: "unset" }}>
+                          See Demo
+                        </button>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1571,34 +1304,7 @@ export default function Home() {
               <h3 className="cp-title">Project Title</h3>
             </div>
 
-            <div className="cp-body">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-            <div className="cp-list">
-              <ul>
-                <li>Type - Application Plugin</li>
-                <li>Technologies used - TypeScript, CSS</li>
-                <li>
-                  Links -{" "}
-                  <a className="accent-link" href="#">
-                    Documentation
-                  </a>
-                  ,{" "}
-                  <a className="accent-link" href="#">
-                    Repository
-                  </a>
-                  ,{" "}
-                  <a className="accent-link" href="#">
-                    Code
-                  </a>
-                </li>
-              </ul>
-            </div>
+            <div className="cp-body"></div>
           </div>
         </div>
       </div>
