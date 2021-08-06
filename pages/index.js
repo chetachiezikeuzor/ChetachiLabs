@@ -2,6 +2,42 @@ import Head from "next/head";
 import React from "react";
 
 export default function Home() {
+  const themeChanger = (e, path) => {
+    if (path === "/theme-change") {
+      const themeButton = document.getElementById("theme-button");
+      const darkTheme = "dark-mode";
+      const iconTheme = "bx-sun";
+
+      const selectedTheme = localStorage.getItem("selected-theme");
+      const selectedIcon = localStorage.getItem("selected-icon");
+
+      const getCurrentTheme = () =>
+        document.body.classList.contains(darkTheme) ? "dark" : "light";
+      const getCurrentIcon = () =>
+        themeButton.classList.contains(iconTheme) ? "bx-moon" : "bx-sun";
+
+      if (selectedTheme) {
+        document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
+          darkTheme
+        );
+        themeButton.classList[selectedIcon === "bx-moon" ? "add" : "remove"](
+          iconTheme
+        );
+      }
+
+      themeButton.addEventListener("click", () => {
+        document.body.classList.toggle(darkTheme);
+        document.querySelector("img").classList.toggle(darkTheme);
+        document.querySelector("iframe").classList.toggle(darkTheme);
+        document.querySelector("html").classList.toggle(darkTheme);
+
+        themeButton.classList.toggle(iconTheme);
+        localStorage.setItem("selected-theme", getCurrentTheme());
+        localStorage.setItem("selected-icon", getCurrentIcon());
+      });
+    }
+  };
+
   const handleClick = (e, path) => {
     if (path === "/about") {
       document.querySelector(".content-popover").classList.toggle("open");
@@ -33,6 +69,11 @@ export default function Home() {
       <Head>
         <title>Chetachi's Portfolio</title>
         <link rel="icon" href="/c-icon.png" />
+
+        <link
+          href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+          rel="stylesheet"
+        ></link>
 
         <link rel="stylesheet" href="/style.css" />
         <link rel="stylesheet" href="/blog.css" />
@@ -184,6 +225,14 @@ export default function Home() {
                   <text>Portfolio</text>
                 </a>
               </li>
+
+              <li>
+                <i
+                  onClick={(e) => themeChanger(e, "/theme-change")}
+                  className="bx bx-moon change-theme"
+                  id="theme-button"
+                ></i>
+              </li>
             </ul>
           </nav>
         </header>
@@ -268,9 +317,9 @@ export default function Home() {
                 <div className="header-title-block">
                   <div className="header-accent-wrap">
                     <h3 className="h3-large-title">
-                      Leadership
+                      Community
                       <br />
-                      Skills
+                      Leadership
                     </h3>
                   </div>
                   <p className="paragraph-width">
