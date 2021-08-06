@@ -7,7 +7,7 @@ The first iteration and design of chetachilabs.com built in React.js with Modern
 ![](https://i.imgur.com/3QMS2xP.jpg)
 ![](https://i.imgur.com/ukji1Ac.jpg)
 
-## Site Design
+## Style Guide
 
 | Color       | Hex                                                                |
 | ----------- | ------------------------------------------------------------------ |
