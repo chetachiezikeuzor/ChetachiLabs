@@ -47,7 +47,10 @@ export default function Home() {
           property="og:description"
           content="Chetachi's personal portfolio site"
         ></meta>
-        <meta property="og:image" content="public/sitedemo.png"></meta>
+        <meta
+          property="og:image"
+          content="https://i.imgur.com/3QMS2xP.jpg"
+        ></meta>
         <meta property="og:image:width" content="1200"></meta>
         <meta property="og:image:height" content="630"></meta>
         <meta property="og:url" content="https://chetachilabs.com/"></meta>
