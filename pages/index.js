@@ -37,13 +37,17 @@ export default function Home() {
         <link rel="stylesheet" href="/style.css" />
         <link rel="stylesheet" href="/blog.css" />
         <meta property="og:title" content="Chetachi's Portfolio"></meta>
+        <meta name="twitter:creator" content="@chetachiiii" />
         <meta
           property="og:description"
           content="Chetachi's personal portfolio site"
         ></meta>
-        <meta property="og:image" content="/sitedemo.png"></meta>
+        <meta property="og:image" content="public/sitedemo.png"></meta>
+        <meta property="og:image:width" content="1200"></meta>
+        <meta property="og:image:height" content="630"></meta>
         <meta property="og:url" content="https://chetachilabs.com"></meta>
-        <meta name="twitter:card" content="summary_large_image"></meta>
+        <meta name="twitter:card" content="summary"></meta>
+
         <meta
           name="keywords"
           content="HTML, CSS, JavaScript, React, NextJS, Software, Software Developer, Software Engineer, Tech, Junior Developer, Junior Developer Texas, Software Developer Texas, Software Engineer Texas, Junior Developer Houston, Junior Developer Austin, Software Developer Austin, Software Engineer Austin, Junior Developer Dallas, Software Developer Dallas, Software Engineer Dallas"
