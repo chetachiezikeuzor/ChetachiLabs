@@ -1120,7 +1120,7 @@ export default function Home() {
                     <div className="content-item w-inline-block">
                       <div className="content-image-wrap">
                         <img
-                          src="img/cMenu Demo Header.png"
+                          src="/img/Palindrome Demo Header.png"
                           loading="lazy"
                           alt=""
                           sizes="(max-width: 479px) 86vw, (max-width: 767px) 77vw, (max-width: 991px) 430px, 37vw"
@@ -1136,23 +1136,6 @@ export default function Home() {
                         </p>
                       </div>
                       <div className="technologies-wrapper padding-top-32">
-                        <div className="technologies-ava">
-                          <svg
-                            className="technology-icon"
-                            xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true"
-                            focusable="false"
-                            width="1em"
-                            height="1em"
-                            preserveAspectRatio="xMidYMid meet"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              d="M3 3h18v18H3V3m10.71 14.86c.5.98 1.51 1.73 3.09 1.73c1.6 0 2.8-.83 2.8-2.36c0-1.41-.81-2.04-2.25-2.66l-.42-.18c-.73-.31-1.04-.52-1.04-1.02c0-.41.31-.73.81-.73c.48 0 .8.21 1.09.73l1.31-.87c-.55-.96-1.33-1.33-2.4-1.33c-1.51 0-2.48.96-2.48 2.23c0 1.38.81 2.03 2.03 2.55l.42.18c.78.34 1.24.55 1.24 1.13c0 .48-.45.83-1.15.83c-.83 0-1.31-.43-1.67-1.03l-1.38.8M13 11.25H8v1.5h1.5V20h1.75v-7.25H13v-1.5z"
-                              fill=""
-                            />
-                          </svg>
-                        </div>
                         <div className="technologies-ava">
                           <svg
                             className="technology-icon"
@@ -1381,7 +1364,7 @@ export default function Home() {
       <footer className="footer-section align-items-center">
         <div className="footer-end-block">
           <p className="legal-detail">
-            Created with ❤️ by
+            Designed and built with ❤️ by
             <a href="https://www.twitter.com/chetachiiii" target="_blank">
               Chetachi
             </a>
