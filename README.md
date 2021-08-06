@@ -4,4 +4,3 @@
 
 ![](https://i.imgur.com/3QMS2xP.jpg)
 ![](https://i.imgur.com/ukji1Ac.jpg)
-![](https://i.imgur.com/S8GdS2Q.jpg)
