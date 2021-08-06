@@ -36,8 +36,13 @@ export default function Home() {
 
         <link rel="stylesheet" href="/style.css" />
         <link rel="stylesheet" href="/blog.css" />
-        <meta property="og:title" content="Chetachi's Portfolio"></meta>
+
+        <meta name="twitter:card" content="summary"></meta>
+        <meta name="twitter:site" content="@chetachiiii" />
         <meta name="twitter:creator" content="@chetachiiii" />
+
+        <meta property="og:title" content="Chetachi's Portfolio"></meta>
+
         <meta
           property="og:description"
           content="Chetachi's personal portfolio site"
@@ -45,8 +50,7 @@ export default function Home() {
         <meta property="og:image" content="public/sitedemo.png"></meta>
         <meta property="og:image:width" content="1200"></meta>
         <meta property="og:image:height" content="630"></meta>
-        <meta property="og:url" content="https://chetachilabs.com"></meta>
-        <meta name="twitter:card" content="summary"></meta>
+        <meta property="og:url" content="https://chetachilabs.com/"></meta>
 
         <meta
           name="keywords"
