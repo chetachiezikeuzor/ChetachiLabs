@@ -1095,6 +1095,18 @@ FOOTER SECTION
   cursor: pointer;
 }
 
+.tapText {
+  visibility: hidden;
+  opacity: 0;
+  bottom: 24px;
+  transition: 100ms ease-in-out;
+}
+
+.change-theme:hover .tapText {
+  opacity: 1;
+  visibility: visible;
+}
+
 body.dark-mode,
 body.dark-mode html {
   background-color: black !important;

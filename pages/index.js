@@ -228,20 +228,37 @@ export default function Home() {
             </ul>
           </nav>
         </header>
-
-        <i
-          onClick={(e) => themeChanger(e, "/theme-change")}
-          className="bx bx-moon change-theme"
-          id="theme-button"
-        ></i>
+        <div className="change-theme">
+          <i
+            onClick={(e) => themeChanger(e, "/theme-change")}
+            className="bx bx-moon change-theme"
+            id="theme-button"
+          ></i>
+          <text
+            className="tapText"
+            style={{
+              fontSize: "12px",
+              marginTop: "5px",
+              fontSize: "12px",
+              transform: "rotate(-36deg)",
+              position: "fixed",
+              bottom: "20px",
+              right: "8px",
+              color: "var(--text-color)",
+              cursor: "pointer",
+            }}
+          >
+            double tap!
+          </text>
+        </div>
 
         <section className="home-section align-items-center">
           <div className="container">
             <div className="row align-items-center">
               <div className="home-text">
-                <p>Hello, I'm</p>
+                <p>Hello, my name is</p>
                 <h1>Chetachi Ezikeuzor,</h1>
-                <h2>a Software Developer & Designer</h2>
+                <h2>I am a Software Developer & Designer</h2>
                 <a href="mailto:chetachiezikeuzor@gmail.com">
                   <button
                     className="button"
@@ -315,7 +332,7 @@ export default function Home() {
                 <div className="header-title-block">
                   <div className="header-accent-wrap">
                     <h3 className="h3-large-title">
-                      Community
+                      Community &
                       <br />
                       Leadership
                     </h3>
@@ -358,8 +375,8 @@ export default function Home() {
                     </h3>
                   </div>
                   <p className="paragraph-width technologies-width">
-                    I'm comfortable with CSS, HTML, Javascript, and TypeScript
-                    and have created projects using MongoDB, React, and Node.
+                    I'm skilled with CSS, HTML, Javascript, and TypeScript and
+                    have created projects using MongoDB, React, and NodeJS.
                   </p>
                 </div>
               </div>
@@ -493,8 +510,6 @@ export default function Home() {
                 <div className="header-title-block">
                   <div className="header-accent-wrap">
                     <h3 className="h3-large-title">
-                      Open Source
-                      <br />
                       Contribution
                       <br />
                       Projects
