@@ -1,8 +1,5 @@
 import Head from "next/head";
 import React from "react";
-import { useRouter } from "next/router";
-import { Helmet } from "react-helmet";
-import Cookies from "universal-cookie";
 
 export default function Home() {
   const handleClick = (e, path) => {
@@ -39,13 +36,20 @@ export default function Home() {
 
         <link rel="stylesheet" href="/style.css" />
         <link rel="stylesheet" href="/blog.css" />
-
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
-          rel="stylesheet"
-        />
+        <meta name="image" content="/Site Demo.png"></meta>
+        <meta
+          name="keywords"
+          content="HTML, CSS, JavaScript, React, NextJS, Software, Software Developer, Software Engineer, Tech, Junior Developer, Junior Developer Texas, Software Developer Texas, Software Engineer Texas, Junior Developer Houston, Junior Developer Austin, Software Developer Austin, Software Engineer Austin, Junior Developer Dallas, Software Developer Dallas, Software Engineer Dallas"
+        ></meta>
+        <meta
+          name="description"
+          content="Chetachi's personal portfolio site"
+        ></meta>
+        <meta name="author" content="Chetachi Ezikeuzor"></meta>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+        ></meta>
       </Head>
 
       <main>
