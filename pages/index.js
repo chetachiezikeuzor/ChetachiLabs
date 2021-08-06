@@ -144,7 +144,7 @@ export default function Home() {
                 </a>
               </li>
               <li>
-                <a className="nav-link" href="/#applications-section">
+                <a className="nav-link" href="/#contributions-section">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     aria-hidden="true"
@@ -346,7 +346,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="content-section" id="skills-wrap">
+        <div className="content-section" id="skills-section">
           <div className="container">
             <div className="content-wrapper grid-layout">
               <div className="title-wrapper">
@@ -486,7 +486,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="content-section" id="contributions-wrap">
+        <div className="content-section" id="contributions-section">
           <div className="container">
             <div className="content-wrapper">
               <div className="title-wrapper">
@@ -524,7 +524,7 @@ export default function Home() {
                     <div className="content-item w-inline-block">
                       <div className="content-image-wrap">
                         <img
-                          src="https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/assets/light2.png?raw=true"
+                          src="/img/Yin and Yang Demo Header.png"
                           loading="lazy"
                           alt=""
                           sizes="(max-width: 479px) 86vw, (max-width: 767px) 77vw, (max-width: 991px) 430px, 37vw"
@@ -736,7 +736,7 @@ export default function Home() {
                     <div className="content-item w-inline-block">
                       <div className="content-image-wrap">
                         <img
-                          src="img/highlightr.png"
+                          src="/img/Highlightr Demo Header.png"
                           loading="lazy"
                           alt=""
                           sizes="(max-width: 479px) 86vw, (max-width: 767px) 77vw, (max-width: 991px) 430px, 37vw"
@@ -857,7 +857,7 @@ export default function Home() {
                     <div className="content-item w-inline-block">
                       <div className="content-image-wrap">
                         <img
-                          src="img/Highlightr Demo Header.png"
+                          src="/img/MultiPix Demo Header.png"
                           loading="lazy"
                           alt=""
                           sizes="(max-width: 479px) 86vw, (max-width: 767px) 77vw, (max-width: 991px) 430px, 37vw"
@@ -989,7 +989,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="content-section" id="challenges-wrap">
+        <div className="content-section" id="challenges-section">
           <div className="container">
             <div className="content-wrapper">
               <div className="title-wrapper">

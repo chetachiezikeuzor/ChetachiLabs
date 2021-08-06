@@ -162,6 +162,9 @@ MEDIA QUERIES
   ul.circular-grid-layout {
     margin: 0 auto;
   }
+  div.content-image-wrap {
+    height: unset;
+  }
 }
 
 @media screen and (max-width: 852px) {
@@ -187,6 +190,12 @@ MEDIA QUERIES
   }
   div.container {
     padding: 0px;
+  }
+  div.content-image-wrap {
+    height: unset;
+  }
+  div.title-wrapper {
+    margin-bottom: unset;
   }
 }
 
@@ -728,9 +737,9 @@ CONTENT BLOCKS
 .content-image-wrap {
   position: relative;
   overflow: hidden;
-  height: 238px;
+  height: 230px;
   width: 100%;
-  margin-bottom: 32px;
+  margin-bottom: 22px;
 }
 
 .create-article-form {
@@ -1106,9 +1115,10 @@ body.dark-mode {
   filter: invert(1) hue-rotate(180deg);
 }
 
+body.dark-mode .cp-inner,
 body.dark-mode .nav-header {
-  background-color: #f7f9fc;
-  background: hsla(0°, 0%, 9%, 0.5);
+  background-color: var(--white-alpha-36);
+  background: #f8f9fc;
 }
 
 body.dark-mode .nav-logo,
