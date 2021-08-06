@@ -43,7 +43,7 @@ export default function Home() {
         ></meta>
         <meta property="og:image" content="/sitedemo.png"></meta>
         <meta property="og:url" content="https://chetachilabs.com"></meta>
-        <meta name="twitter:card" content="/sitedemo.png"></meta>
+        <meta name="twitter:card" content="summary_large_image"></meta>
         <meta
           name="keywords"
           content="HTML, CSS, JavaScript, React, NextJS, Software, Software Developer, Software Engineer, Tech, Junior Developer, Junior Developer Texas, Software Developer Texas, Software Engineer Texas, Junior Developer Houston, Junior Developer Austin, Software Developer Austin, Software Engineer Austin, Junior Developer Dallas, Software Developer Dallas, Software Engineer Dallas"
