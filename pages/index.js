@@ -225,17 +225,15 @@ export default function Home() {
                   <text>Portfolio</text>
                 </a>
               </li>
-
-              <li>
-                <i
-                  onClick={(e) => themeChanger(e, "/theme-change")}
-                  className="bx bx-moon change-theme"
-                  id="theme-button"
-                ></i>
-              </li>
             </ul>
           </nav>
         </header>
+
+        <i
+          onClick={(e) => themeChanger(e, "/theme-change")}
+          className="bx bx-moon change-theme"
+          id="theme-button"
+        ></i>
 
         <section className="home-section align-items-center">
           <div className="container">
