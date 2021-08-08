@@ -210,7 +210,7 @@ export default function Home() {
                 <a
                   target="_blank"
                   className="nav-link"
-                  href="/ChetachiEzikeuzorResume.pdf"
+                  href="/Chetachi-Ezikeuzor-Resume.pdf"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -1219,9 +1219,8 @@ export default function Home() {
                 />
               </svg>
             </a>
-
             <a
-              href="/ChetachiEzikeuzorResume.pdf"
+              href="/Chetachi-Ezikeuzor-Resume.pdf"
               className="social-link-footer link-icon-center"
               target="_blank"
             >
