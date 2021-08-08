@@ -1,5 +1,6 @@
 import Head from "next/head";
 import React from "react";
+import { Helmet } from "react-helmet";
 
 export default function Resume() {
   return (
@@ -9,8 +10,31 @@ export default function Resume() {
         <link rel="stylesheet" href="/fonts.css"></link>
         <title>Chetachi Ezikeuzor Resume</title>
       </Head>
+      <header>
+        <a
+          className="download-link home-button-download generate-pdf"
+          id="resume-button"
+        >
+          <svg
+            title="Generate PDF"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="img"
+            width="1em"
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 24 24"
+          >
+            <path d="M12 16l4-5h-3V4h-2v7H8z" fill="currentColor" />
+            <path
+              d="M20 18H4v-7H2v7c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-7h-2v7z"
+              fill="currentColor"
+            />
+          </svg>
+        </a>
+      </header>
 
-      <main className="l-main main-container">
+      <main className="l-main main-container" id="area-cv">
         <div className="resume-top">
           <section className="home-container section section-grid">
             <div className="home-data section-grid">
@@ -24,32 +48,11 @@ export default function Resume() {
           <section className="social">
             <div className="social-container section-grid">
               <a
-                href="chetachiezikeuzor@gmail.com"
+                style={{ color: "black", fontSize: ".8em" }}
+                href="tel:8325073418"
                 className="social-link"
                 target="_blank"
               >
-                <svg
-                  className="social-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  role="img"
-                  width="1em"
-                  height="1em"
-                  preserveAspectRatio="xMidYMid meet"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M20 4H6c-1.103 0-2 .897-2 2v5h2V8l6.4 4.8a1.001 1.001 0 0 0 1.2 0L20 8v9h-8v2h8c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm-7 6.75L6.666 6h12.668L13 10.75z"
-                    fill="currentColor"
-                  />
-                  <path
-                    d="M2 12h7v2H2zm2 3h6v2H4zm3 3h4v2H7z"
-                    fill="currentColor"
-                  />
-                </svg>{" "}
-                chetachiezikeuzor@gmail.com
-              </a>
-              <a href=" " className="social-link" target="_blank">
                 <svg
                   className="social-icon"
                   xmlns="http://www.w3.org/2000/svg"
@@ -72,29 +75,7 @@ export default function Resume() {
                 (832) 507-3418
               </a>
               <a
-                href="https://www.linkedin.com/in/chetachi/"
-                className="social-link"
-                target="_blank"
-              >
-                <svg
-                  className="social-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  role="img"
-                  width="1em"
-                  height="1em"
-                  preserveAspectRatio="xMidYMid meet"
-                  viewBox="0 0 24 24"
-                >
-                  <circle cx="4.983" cy="5.009" r="2.188" fill="currentColor" />
-                  <path
-                    d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118c1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783c-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"
-                    fill="currentColor"
-                  />
-                </svg>{" "}
-                @chetachiezikeuzor
-              </a>
-              <a
+                style={{ color: "black", fontSize: ".8em" }}
                 href="https://twitter.com/chetachiiii"
                 className="social-link"
                 target="_blank"
@@ -117,6 +98,59 @@ export default function Resume() {
                 @chetachiiii
               </a>
               <a
+                style={{ color: "black", fontSize: ".8em" }}
+                href="https://www.linkedin.com/in/chetachi/"
+                className="social-link"
+                target="_blank"
+              >
+                <svg
+                  className="social-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  role="img"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 24 24"
+                >
+                  <circle cx="4.983" cy="5.009" r="2.188" fill="currentColor" />
+                  <path
+                    d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118c1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783c-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"
+                    fill="currentColor"
+                  />
+                </svg>{" "}
+                @chetachiezikeuzor
+              </a>
+
+              <a
+                href="mailto:chetachiezikeuzor@gmail.com"
+                className="social-link"
+                target="_blank"
+                style={{ color: "black", fontSize: ".8em" }}
+              >
+                <svg
+                  className="social-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  role="img"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 4H6c-1.103 0-2 .897-2 2v5h2V8l6.4 4.8a1.001 1.001 0 0 0 1.2 0L20 8v9h-8v2h8c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm-7 6.75L6.666 6h12.668L13 10.75z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M2 12h7v2H2zm2 3h6v2H4zm3 3h4v2H7z"
+                    fill="currentColor"
+                  />
+                </svg>{" "}
+                chetachiezikeuzor@gmail.com
+              </a>
+              <a
+                style={{ color: "black", fontSize: ".8em" }}
                 href="https://github.com/chetachiezikeuzor"
                 className="social-link"
                 target="_blank"
@@ -141,6 +175,7 @@ export default function Resume() {
                 @chetachiezikeuzor
               </a>
               <a
+                style={{ color: "black", fontSize: ".8em" }}
                 href="https://chetachilabs.com"
                 className="social-link"
                 target="_blank"
@@ -167,17 +202,15 @@ export default function Resume() {
 
           <section className="profile section" id="profile">
             <p className="profile-description">
-              Political science student eager to apply extensive knowledge of
-              communication, adaptability, and problem-solving skills to achieve
-              company goals. Exceptional worker with a record for exceeding
-              expectations, leading young ones as well as peers, and delivering
-              and developing complex projects. Strong communicator and works
-              well in stressful environments.
+              A Design-focused developer that is eager to apply extensive
+              knowledge of communication, adaptability, computer programming,
+              and problem-solving skills to achieve company goals. I'm an
+              exceptional worker with a record for exceeding expectations,
             </p>
           </section>
         </div>
 
-        <div className="resume" id="area-cv">
+        <div className="resume">
           <div className="resume-left">
             <section className="experience section" id="experience">
               <h2 className="section-title">Relevant Experience</h2>
@@ -225,9 +258,9 @@ export default function Resume() {
                       </li>
                       <li>
                         The interface handles common key shortcuts and was
-                        designed, built and is currently maintained by me.{" "}
+                        designed, built and is currently maintained by me. The
+                        component now has over 2,000 users.{" "}
                       </li>
-                      <li>The component now has over 2,000 users. </li>
                     </ul>
                   </div>
                 </div>
@@ -253,11 +286,8 @@ export default function Resume() {
                       </li>
                       <li>
                         The component was built using JavaScript, CSS, Browser
-                        APIs and Obsidian's application API.
-                      </li>
-                      <li>
-                        The component was designed, developed and is currently
-                        maintained by me.
+                        APIs and Obsidian's application API. The component was
+                        designed, developed and is currently maintained by me.
                       </li>
                     </ul>
                   </div>
@@ -282,11 +312,9 @@ export default function Resume() {
                       </li>
                       <li>
                         The tool was built using TypeScript and multiple APIs
-                        such as Unsplash and Obsidian API.
-                      </li>
-                      <li>
-                        The interface taps into broser API's such as Navigator
-                        to allow for "copy to clipboard" functionality.{" "}
+                        such as Unsplash and Obsidian API. The interface taps
+                        into broser API's such as Navigator to allow for "copy
+                        to clipboard" functionality.{" "}
                       </li>
                       <li>
                         The tool also functions as an image encoder via base64
@@ -304,7 +332,7 @@ export default function Resume() {
                 <div className="experience-content">
                   <div className="experience-data section-grid">
                     <h3 className="experience-title">
-                      Office Secretary at Diamond Health Care
+                      Office Secretary @Diamond Health Care
                     </h3>
 
                     <span className="experience-company">
@@ -313,27 +341,19 @@ export default function Resume() {
 
                     <ul className="experience-description">
                       <li>
-                        Restocked office supplies and retrieved files for staff
+                        Design tracking reports and client documentation methods
+                        that when implemented, increased productivity for staff
+                        and streamlined processes.
                       </li>
                       <li>
-                        Completed clerical tasks such a filing, copying and
-                        distributing mail
-                      </li>
-                      <li>
-                        Answered incoming telephone calls, took down messages
-                        and provided information
-                      </li>
-                      <li>
+                        Restocked office supplies and retrieved files for staff.
                         Kept files and digitized records organized for easy
-                        updating and retrieval by 10 team members
+                        updating and retrieval by 10 person team.
                       </li>
+
                       <li>
                         Sorted and organized materials such as physical files,
-                        tracking spreadsheets and reports
-                      </li>
-                      <li>
-                        Maintained office equipment with troubleshooting and
-                        maintenance abilities
+                        tracking spreadsheets and reports.
                       </li>
                     </ul>
                   </div>
@@ -356,7 +376,7 @@ export default function Resume() {
 
                 <div className="skills-data">
                   <h3>Tools & Platforms</h3>
-                  <p>Git, Netlify, Webpack, Webflow</p>
+                  <p>Git, Netlify, Webpack, Webflow, Wordpress, Notion</p>
                 </div>
                 <div className="skills-data">
                   <h3>Design</h3>
@@ -373,11 +393,10 @@ export default function Resume() {
                 <div className="references-content section-grid">
                   <h3 className="references-title">Ryan McQuen</h3>
                   <span className="references-subtitle">
-                    Senior Software Developer - StockX
+                    Software Developer @StockX
                   </span>
                   <ul className="reference-contact">
-                    <li>Phone: 12345678</li>
-                    <li>Email: Ryan@mcquen.email</li>
+                    <li>Reference available on request</li>
                     <li>Profile: github.com/ryanpcmcquen</li>
                     <li>Website: ryanpcmcquen.org</li>
                   </ul>
@@ -390,11 +409,13 @@ export default function Resume() {
               <div className="education-container section-grid">
                 <div className="education-data section-grid">
                   <h3 className="education-title">Baylor University</h3>
-                  <span className="education-studies">
-                    {" "}
-                    Bachelors of Arts in Political Science
+                  <span className="education-year">
+                    August 2018 - December 2022
                   </span>
-                  <span className="education-year">August 2018-May 2022</span>
+                  <ul className="education-studies">
+                    <li>Bachelors of Arts in Political Science</li>
+                    <li>Baylor Mock Trial, Pre-Law Society, Chess Club</li>
+                  </ul>
                 </div>
               </div>
             </section>
@@ -405,114 +426,115 @@ export default function Resume() {
                 <p>Conversational Igbo & English</p>
               </div>
             </section>
-
             <section className="interests section">
               <h2 className="section-title">Interests</h2>
               <div className="interests-container section-grid">
-                <div className="interests-content">
-                  <svg
-                    className="interest-icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true"
-                    role="img"
-                    width="1em"
-                    height="1em"
-                    preserveAspectRatio="xMidYMid meet"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 2.01H6c-1.206 0-3 .799-3 3v14c0 2.201 1.794 3 3 3h15v-2H6.012C5.55 19.998 5 19.815 5 19.01c0-.101.009-.191.024-.273c.112-.575.583-.717.987-.727H20c.018 0 .031-.009.049-.01H21V4.01c0-1.103-.897-2-2-2zm0 14H5v-11c0-.806.55-.988 1-1h7v7l2-1l2 1v-7h2v12z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                  <span className="interests-name">Reading</span>
-                </div>
-
-                <div className="interests-content">
-                  <svg
-                    className="interest-icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true"
-                    role="img"
-                    width="1em"
-                    height="1em"
-                    preserveAspectRatio="xMidYMid meet"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M20 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"
-                      fill="currentColor"
-                    />
-                    <path
-                      d="M9.293 9.293L5.586 13l3.707 3.707l1.414-1.414L8.414 13l2.293-2.293zm5.414 0l-1.414 1.414L15.586 13l-2.293 2.293l1.414 1.414L18.414 13z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                  <span className="interests-name">Plugin development</span>
-                </div>
-
-                <div className="interests-content">
-                  <svg
-                    className="interest-icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true"
-                    role="img"
-                    width="1em"
-                    height="1em"
-                    preserveAspectRatio="xMidYMid meet"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M21 2H3a1 1 0 0 0-1 1v18a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zm-1 6h-4v4h4v4h-4v4h-4v-4H8v4H4v-4h4v-4H4V8h4V4h4v4h4V4h4v4z"
-                      fill="currentColor"
-                    />
-                    <path d="M8 8h4v4H8zm4 4h4v4h-4z" fill="currentColor" />
-                  </svg>
-                  <span className="interests-name">Chess</span>
-                </div>
-
-                <div className="interests-content">
-                  <svg
-                    className="interest-icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true"
-                    role="img"
-                    width="1em"
-                    height="1em"
-                    preserveAspectRatio="xMidYMid meet"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M20.563 3.34a1.002 1.002 0 0 0-.989-.079l-17 8a1 1 0 0 0 .026 1.821L8 15.445v6.722l5.836-4.168l4.764 2.084a1 1 0 0 0 1.399-.85l1-15a1.005 1.005 0 0 0-.436-.893zm-2.466 14.34l-5.269-2.306L16 9.167l-7.649 4.25l-2.932-1.283l13.471-6.34l-.793 11.886z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                  <span className="interests-name">Traveling</span>
-                </div>
-
-                <div className="interests-content">
-                  <svg
-                    className="interest-icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true"
-                    role="img"
-                    width="0.93em"
-                    height="1em"
-                    preserveAspectRatio="xMidYMid meet"
-                    viewBox="0 0 476 512"
-                  >
-                    <path
-                      d="M378.283 64.148h-14.361v58.404c-2.143 14.636-10.959 18.011-23.936 14.362L54.596 64.149H34.564c-46.248 0-40.865-64.148 0-64.148h343.719c44.652 0 49.823 64.148 0 64.148zM61.23 137.362l285.074 69.833c21.371 5.236 29.344-27.313 7.974-32.548L69.203 104.815c-21.811-5.343-29.784 27.205-7.972 32.548zm0 69.414l285.074 69.832c21.371 5.236 29.344-27.313 7.974-32.548L69.203 174.228c-21.811-5.343-29.784 27.206-7.972 32.548zm0 69.414l285.074 69.832c21.371 5.236 29.344-27.313 7.974-32.548L69.203 243.642c-21.811-5.343-29.784 27.205-7.972 32.548zm270.833 175.791l-260.3-66.543c-10.544-3.038-19.538-1.944-22.834 14.353v50.886H25.444c-33.924 0-33.924 61.324 0 61.324h361.861c30.873 0 41.312-61.324-8.058-61.324l-47.183 1.305zm16.119-32.954c63.296.877 92.592 22.329 93.56 73.411c.425 22.471 33.93 21.837 33.505-.634c-3.772-83.618-56.93-104.678-122.791-106.969L69.204 315.449c-21.811-5.342-29.784 27.205-7.972 32.548l286.952 71.03z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                  <span className="interests-name">Crochet</span>
-                </div>
+                <ul className="interests-content">
+                  <li>
+                    <svg
+                      className="interest-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      role="img"
+                      width="1em"
+                      height="1em"
+                      preserveAspectRatio="xMidYMid meet"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 2.01H6c-1.206 0-3 .799-3 3v14c0 2.201 1.794 3 3 3h15v-2H6.012C5.55 19.998 5 19.815 5 19.01c0-.101.009-.191.024-.273c.112-.575.583-.717.987-.727H20c.018 0 .031-.009.049-.01H21V4.01c0-1.103-.897-2-2-2zm0 14H5v-11c0-.806.55-.988 1-1h7v7l2-1l2 1v-7h2v12z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <span className="interests-name">Reading</span>
+                  </li>
+                  <li>
+                    <svg
+                      className="interest-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      role="img"
+                      width="1em"
+                      height="1em"
+                      preserveAspectRatio="xMidYMid meet"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"
+                        fill="currentColor"
+                      />
+                      <path
+                        d="M9.293 9.293L5.586 13l3.707 3.707l1.414-1.414L8.414 13l2.293-2.293zm5.414 0l-1.414 1.414L15.586 13l-2.293 2.293l1.414 1.414L18.414 13z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <span className="interests-name">Plugin development</span>
+                  </li>
+                  <li>
+                    <svg
+                      className="interest-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      role="img"
+                      width="1em"
+                      height="1em"
+                      preserveAspectRatio="xMidYMid meet"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M21 2H3a1 1 0 0 0-1 1v18a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zm-1 6h-4v4h4v4h-4v4h-4v-4H8v4H4v-4h4v-4H4V8h4V4h4v4h4V4h4v4z"
+                        fill="currentColor"
+                      />
+                      <path d="M8 8h4v4H8zm4 4h4v4h-4z" fill="currentColor" />
+                    </svg>
+                    <span className="interests-name">Chess</span>
+                  </li>
+                  <li>
+                    <svg
+                      className="interest-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      role="img"
+                      width="1em"
+                      height="1em"
+                      preserveAspectRatio="xMidYMid meet"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20.563 3.34a1.002 1.002 0 0 0-.989-.079l-17 8a1 1 0 0 0 .026 1.821L8 15.445v6.722l5.836-4.168l4.764 2.084a1 1 0 0 0 1.399-.85l1-15a1.005 1.005 0 0 0-.436-.893zm-2.466 14.34l-5.269-2.306L16 9.167l-7.649 4.25l-2.932-1.283l13.471-6.34l-.793 11.886z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <span className="interests-name">Traveling</span>
+                  </li>
+                  <li>
+                    <svg
+                      className="interest-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      role="img"
+                      width="0.93em"
+                      height="1em"
+                      preserveAspectRatio="xMidYMid meet"
+                      viewBox="0 0 476 512"
+                    >
+                      <path
+                        d="M378.283 64.148h-14.361v58.404c-2.143 14.636-10.959 18.011-23.936 14.362L54.596 64.149H34.564c-46.248 0-40.865-64.148 0-64.148h343.719c44.652 0 49.823 64.148 0 64.148zM61.23 137.362l285.074 69.833c21.371 5.236 29.344-27.313 7.974-32.548L69.203 104.815c-21.811-5.343-29.784 27.205-7.972 32.548zm0 69.414l285.074 69.832c21.371 5.236 29.344-27.313 7.974-32.548L69.203 174.228c-21.811-5.343-29.784 27.206-7.972 32.548zm0 69.414l285.074 69.832c21.371 5.236 29.344-27.313 7.974-32.548L69.203 243.642c-21.811-5.343-29.784 27.205-7.972 32.548zm270.833 175.791l-260.3-66.543c-10.544-3.038-19.538-1.944-22.834 14.353v50.886H25.444c-33.924 0-33.924 61.324 0 61.324h361.861c30.873 0 41.312-61.324-8.058-61.324l-47.183 1.305zm16.119-32.954c63.296.877 92.592 22.329 93.56 73.411c.425 22.471 33.93 21.837 33.505-.634c-3.772-83.618-56.93-104.678-122.791-106.969L69.204 315.449c-21.811-5.342-29.784 27.205-7.972 32.548l286.952 71.03z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <span className="interests-name">Crochet</span>
+                  </li>
+                </ul>
               </div>
             </section>
           </div>
         </div>
       </main>
+      <Helmet>
+        <script src="/html2pdf.bundle.min.js"></script>
+        <script src="/resumepdf.js"></script>
+      </Helmet>
     </div>
   );
 }
