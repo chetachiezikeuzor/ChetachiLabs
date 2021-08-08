@@ -1045,6 +1045,17 @@ FOOTER SECTION
   visibility: visible;
 }
 
+.sidebar-nav {
+  position: fixed;
+  right: 26px;
+  bottom: 58px;
+}
+
+.MuiSvgIcon-root {
+  height: 1em;
+  width: 1em;
+}
+
 body.dark-mode,
 body.dark-mode html {
   background-color: black !important;
