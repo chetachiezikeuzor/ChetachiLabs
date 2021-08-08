@@ -208,7 +208,11 @@ export default function Home() {
                 </a>
               </li>
               <li>
-                <a className="nav-link" href="/#contact-section">
+                <a
+                  target="_blank"
+                  className="nav-link"
+                  href="/Chetachi Ezikeuzor Resume.pdf"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     aria-hidden="true"
@@ -308,44 +312,6 @@ export default function Home() {
                     for the app.
                   </p>
                 </div>
-              </div>
-              <div className="background-block-content"></div>
-              <div className="w-dyn-list">
-                <div
-                  id="contents"
-                  role="list"
-                  className="content-collection-grid w-dyn-items"
-                >
-                  <div
-                    role="listitem"
-                    className="collection-content-item w-dyn-item"
-                  ></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="content-section" id="leadership-section">
-          <div className="container">
-            <div className="content-wrapper">
-              <div className="title-wrapper">
-                <div className="header-title-block">
-                  <div className="header-accent-wrap">
-                    <h3 className="h3-large-title">
-                      Community &
-                      <br />
-                      Leadership
-                    </h3>
-                  </div>
-                  <p className="paragraph-width">
-                    These are a few projects I've worked on in contribution to
-                    open source tools.
-                  </p>
-                </div>
-                <a href="/about" className="button w-button">
-                  See More
-                </a>
               </div>
               <div className="background-block-content"></div>
               <div className="w-dyn-list">
@@ -577,7 +543,7 @@ export default function Home() {
                       <button
                         className="open-project button"
                         onClick={(e) => handleClick(e, "/about")}
-                        id="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEmLDMEw8E&#x2F;view?embed"
+                        id="/img/Yin and Yang Demo Header.png"
                       >
                         View Preview
                       </button>
@@ -701,7 +667,7 @@ export default function Home() {
                       <button
                         className="open-project button"
                         onClick={(e) => handleClick(e, "/about")}
-                        id="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEmLKvYqGo&#x2F;view?embed"
+                        id="/img/cMenu Demo Header.png"
                       >
                         View Preview
                       </button>
@@ -823,7 +789,7 @@ export default function Home() {
                       <button
                         className="open-project button"
                         onClick={(e) => handleClick(e, "/about")}
-                        id="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEmLNAbhjI&#x2F;view?embed"
+                        id="/img/Highlightr Demo Header.png"
                       >
                         View Preview
                       </button>
@@ -961,7 +927,7 @@ export default function Home() {
                       <button
                         className="open-project button"
                         onClick={(e) => handleClick(e, "/about")}
-                        id="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEmLOVpRa4&#x2F;view?embed"
+                        id="/img/MultiPix Demo Header.png"
                       >
                         View Preview
                       </button>
@@ -1133,10 +1099,8 @@ export default function Home() {
                     willChange: "transform",
                   }}
                 >
-                  <iframe
-                    featurepolicy={{ fullscreen: "self" }}
+                  <img
                     data-responsive="true"
-                    allowFullScreen={false}
                     allow="fullscreen"
                     className="projectItemFrame"
                     loading="lazy"
@@ -1150,7 +1114,7 @@ export default function Home() {
                       margin: "0",
                       height: "100%",
                     }}
-                  ></iframe>
+                  ></img>
                 </div>
               </div>
               <h3 className="cp-title">Project Title</h3>
