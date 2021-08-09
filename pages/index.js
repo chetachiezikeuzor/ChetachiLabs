@@ -1020,6 +1020,7 @@ export default function Home() {
                 <div className="chetachi-form">
                   <form
                     data-netlify="true"
+                    action="POST"
                     method="POST"
                     id="chetachi-form-Contact-Form"
                     name="chetachi-form-Contact-Form"
@@ -1073,21 +1074,12 @@ export default function Home() {
                       type="submit"
                       value="Send Message"
                       name="submit"
-                      data-wait="Please wait..."
                       className="button button-full w-button"
                     ></input>
                     <div class="recaptcha">
                       <div data-netlify-recaptcha="true"></div>
                     </div>
                   </form>
-                  <div className="success-message chetachi-form-done">
-                    <div>Thank you! Your submission has been received!</div>
-                  </div>
-                  <div className="chetachi-form-fail">
-                    <div>
-                      Oops! Something went wrong while submitting the form.
-                    </div>
-                  </div>
                 </div>
               </div>
               <div className="background-block-content"></div>
