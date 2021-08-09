@@ -554,11 +554,17 @@ export default function Home() {
                             <img src="https://img.shields.io/github/stars/chetachiezikeuzor/Yin-and-Yang-Theme"></img>
                           </div>
                           <p>
-                            Flu ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua.
+                            {" "}
+                            A theme created and designed for a minimal
+                            note-taking experience with a high contrast between
+                            dark and light modes. The color scheme used was
+                            picked for optimal viewing experience and the design
+                            was hand-crafted to be usable by those with impaired
+                            vision. With over 8,000 lines of CSS, Yin & Yang is
+                            a perfect theme for any user. The theme now has
+                            hundreds of users and has garnered love and
+                            attention from software developers, teachers,
+                            students, and even musicians.
                           </p>
                         </div>
                         <div className="cp-list">
@@ -678,7 +684,15 @@ export default function Home() {
                             <img src="https://img.shields.io/github/downloads/chetachiezikeuzor/cMenu-Plugin/total.svg"></img>
                             <img src="https://img.shields.io/github/v/release/chetachiezikeuzor/cMenu-Plugin"></img>
                           </div>
-                          <p>cMenu...</p>
+                          <p>
+                            A custom text editor built from scratch that allows
+                            users to create and edit plain text files. The
+                            component was built using JavaScript, CSS, Browser
+                            APIs and Obsidian's application API. The interface
+                            handles common key shortcuts and was designed, built
+                            and is currently maintained by me. The component now
+                            has over 2,000 users.
+                          </p>
                         </div>
                         <div className="cp-list">
                           <ul>
@@ -799,7 +813,15 @@ export default function Home() {
                           >
                             <img src="https://img.shields.io/github/stars/chetachiezikeuzor/Highlightr-Plugin"></img>
                           </div>
-                          <p>Highlightr...</p>
+                          <p>
+                            A custom text editing component built from scratch
+                            that allows users to supplement annotations by
+                            allowing for highlighting text. The component was
+                            built using JavaScript, CSS, Browser APIs and
+                            Obsidian's application API. The component was
+                            designed, developed and is currently maintained by
+                            me.
+                          </p>
                         </div>
                         <div className="cp-list">
                           <ul>
@@ -932,7 +954,19 @@ export default function Home() {
                       </button>
                       <div className="cp-content">
                         <div className="content-details">
-                          <p>MultiPix...</p>
+                          <p>
+                            An image search tool built from scratch that allows
+                            users to search for, embed and download images
+                            directly into their workspaces. The tool was built
+                            using TypeScript and multiple APIs such as Unsplash
+                            and Obsidian API. The interface taps into browser
+                            API's such as Navigator to allow for "copy to
+                            clipboard" functionality. The tool also functions as
+                            an image encoder via base64 encoding for ensure that
+                            images are future proof for users. The tool was
+                            designed, developed and is currently maintained by
+                            me.
+                          </p>
                         </div>
                         <div className="cp-list">
                           <ul>
