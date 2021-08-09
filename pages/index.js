@@ -1020,7 +1020,7 @@ export default function Home() {
                 <div className="chetachi-form">
                   <form
                     data-netlify="true"
-                    method="post"
+                    method="POST"
                     id="chetachi-form-Contact-Form"
                     name="chetachi-form-Contact-Form"
                     data-name="Contact Form"
@@ -1072,6 +1072,7 @@ export default function Home() {
                     <input
                       type="submit"
                       value="Submit"
+                      name="submit"
                       data-wait="Please wait..."
                       className="button button-full w-button"
                     ></input>
