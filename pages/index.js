@@ -244,10 +244,9 @@ export default function Home() {
               fontSize: "12px",
               marginTop: "5px",
               fontSize: "12px",
-              transform: "rotate(-36deg)",
               position: "fixed",
               bottom: "20px",
-              right: "8px",
+              right: "5px",
               color: "var(--text-color)",
               cursor: "pointer",
             }}
