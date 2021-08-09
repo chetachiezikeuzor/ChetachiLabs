@@ -1077,7 +1077,7 @@ export default function Home() {
                       className="button button-full w-button"
                     ></input>
                     <div class="recaptcha">
-                      <div data-netlify-recaptcha></div>
+                      <div data-netlify-recaptcha="true"></div>
                     </div>
                   </form>
                   <div className="success-message chetachi-form-done">
