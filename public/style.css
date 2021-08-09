@@ -1036,7 +1036,7 @@ FOOTER SECTION
 .tapText {
   transform: rotate(-40deg) scale(0);
   bottom: 24px;
-  transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: 200ms ease-in-out;
 }
 
 .change-theme:hover .tapText {
