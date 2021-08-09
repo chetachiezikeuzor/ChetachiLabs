@@ -1025,7 +1025,13 @@ export default function Home() {
                     id="chetachi-form-Contact-Form"
                     name="chetachi-form-Contact-Form"
                     data-name="Contact Form"
+                    onSubmit="Submit"
                   >
+                    <input
+                      type="hidden"
+                      name="form-name"
+                      value="chetachi-form-Contact-Form"
+                    ></input>
                     <h4 className="h4-title">Contact me for a project!</h4>
                     <input
                       type="text"
@@ -1070,12 +1076,13 @@ export default function Home() {
                       cols="35"
                       wrap="soft"
                     ></textarea>
-                    <input
+
+                    <button
                       type="submit"
                       value="Send Message"
                       name="submit"
                       className="button button-full w-button"
-                    ></input>
+                    ></button>
                     <div className="recaptcha">
                       <div data-netlify-recaptcha="true"></div>
                     </div>
