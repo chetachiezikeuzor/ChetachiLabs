@@ -1019,9 +1019,8 @@ export default function Home() {
 
                 <div className="chetachi-form">
                   <form
-                    action="mailto:chetachiezikeuzor@gmail.com"
+                    data-netlify="true"
                     method="post"
-                    encType="text/plain"
                     id="chetachi-form-Contact-Form"
                     name="chetachi-form-Contact-Form"
                     data-name="Contact Form"
