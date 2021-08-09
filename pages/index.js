@@ -1071,11 +1071,14 @@ export default function Home() {
                     ></textarea>
                     <input
                       type="submit"
-                      value="Submit"
+                      value="Send Message"
                       name="submit"
                       data-wait="Please wait..."
                       className="button button-full w-button"
                     ></input>
+                    <div class="recaptcha">
+                      <div data-netlify-recaptcha></div>
+                    </div>
                   </form>
                   <div className="success-message chetachi-form-done">
                     <div>Thank you! Your submission has been received!</div>
