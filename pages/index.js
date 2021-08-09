@@ -1161,7 +1161,10 @@ export default function Home() {
         <div className="footer-end-block">
           <p className="legal-detail">
             Designed and built with ❤️ by
-            <a href="https://www.twitter.com/chetachiiii" target="_blank">
+            <a
+              href="https://github.com/chetachiezikeuzor/ChetachiLabs"
+              target="_blank"
+            >
               Chetachi
             </a>
           </p>
