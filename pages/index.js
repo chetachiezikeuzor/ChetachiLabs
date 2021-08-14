@@ -1023,8 +1023,13 @@ export default function Home() {
                     method="post"
                     data-netlify="true"
                     onSubmit="submit"
+                    data-netlify-honeypot="bot-field"
                   >
                     <input type="hidden" name="form-name" value="contact v1" />
+
+                    <div hidden>
+                      <input name="bot-field" />
+                    </div>
 
                     <h4 className="h4-title">Contact me for a project!</h4>
 
