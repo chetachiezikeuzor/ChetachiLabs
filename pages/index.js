@@ -1026,8 +1026,62 @@ export default function Home() {
                   >
                     <input type="hidden" name="form-name" value="contact v1" />
 
+                    <h4 className="h4-title">Contact me for a project!</h4>
+
+                    <input
+                      type="text"
+                      className="input-field-large chetachi-form-input"
+                      maxLength="256"
+                      name="Name"
+                      data-name="Name"
+                      placeholder="Enter your name"
+                      id="Name"
+                    ></input>
+
+                    <input
+                      type="email"
+                      className="input-field-large chetachi-form-input"
+                      maxLength="256"
+                      name="Email"
+                      data-name="Email"
+                      placeholder="Email Address"
+                      id="Email"
+                    ></input>
+
+                    <input
+                      type="text"
+                      className="input-field-large chetachi-form-input"
+                      maxLength="256"
+                      name="Business-Name"
+                      data-name="Business Name"
+                      placeholder="Business Name"
+                      id="Business-Name"
+                    ></input>
+
+                    <input
+                      type="text"
+                      className="input-field-large chetachi-form-input"
+                      maxLength="256"
+                      name="Phone-Number"
+                      data-name="Phone Number"
+                      placeholder="Phone Number"
+                      id="Phone-Number"
+                    ></input>
+
+                    <textarea
+                      name="Content-Form-Text-Area"
+                      id="Content-Form-Text-Area"
+                      cols="35"
+                      wrap="soft"
+                    ></textarea>
+
                     <input type="text" name="first-name" />
-                    <button type="submit">Submit</button>
+                    <button
+                      type="submit"
+                      className="button button-full w-button"
+                    >
+                      Submit
+                    </button>
                   </form>
                 </div>
               </div>
