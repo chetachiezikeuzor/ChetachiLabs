@@ -134,6 +134,13 @@ MEDIA QUERIES
   ul.circular-grid-layout {
     margin-top: 52px;
   }
+  button.form-button {
+    margin-top: 18px;
+  }
+
+  div.submit-box {
+    display: unset;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -777,14 +784,10 @@ TECH STACK ELEMENT
 /*-----------------
 BUTTONS
 ------------------*/
-/*
-.form-button {
-  margin-top: 18px;
-}
-*/
 
 .submit-box {
   display: flex;
+  gap: 24px;
 }
 
 .button {
