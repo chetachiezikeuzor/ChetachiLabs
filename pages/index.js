@@ -1095,7 +1095,7 @@ export default function Home() {
 
                     <button
                       type="submit"
-                      className="button button-full w-button"
+                      className="button button-full w-button form-button"
                     >
                       Submit
                     </button>
