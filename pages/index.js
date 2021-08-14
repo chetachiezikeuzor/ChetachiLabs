@@ -109,6 +109,11 @@ export default function Home() {
           name="viewport"
           content="width=device-width, initial-scale=1.0"
         ></meta>
+        <script
+          src="https://www.google.com/recaptcha/api.js"
+          async
+          defer
+        ></script>
       </Head>
 
       <main>
@@ -1021,9 +1026,9 @@ export default function Home() {
                   <form
                     name="contact v1"
                     method="post"
-                    data-netlify-recaptcha="true"
                     data-netlify="true"
                     onSubmit="submit"
+                    data-netlify-recaptcha="true"
                     data-netlify-honeypot="bot-field"
                   >
                     <input type="hidden" name="form-name" value="contact v1" />
@@ -1082,7 +1087,10 @@ export default function Home() {
                     ></textarea>
 
                     <div>
-                      <div data-netlify-recaptcha="true"></div>
+                      <div
+                        class="g-recaptcha"
+                        data-sitekey="6LcLgvwbAAAAAAc5KSusSDkJ9e0Pckth8NWrl2wm"
+                      ></div>
                     </div>
 
                     <button
