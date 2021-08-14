@@ -777,9 +777,14 @@ TECH STACK ELEMENT
 /*-----------------
 BUTTONS
 ------------------*/
-
+/*
 .form-button {
   margin-top: 18px;
+}
+*/
+
+.submit-box {
+  display: flex;
 }
 
 .button {

@@ -1086,19 +1086,21 @@ export default function Home() {
                       wrap="soft"
                     ></textarea>
 
-                    <div>
-                      <div
-                        class="g-recaptcha"
-                        data-sitekey="6LcLgvwbAAAAAAc5KSusSDkJ9e0Pckth8NWrl2wm"
-                      ></div>
-                    </div>
+                    <div className="submit-box">
+                      <button
+                        type="submit"
+                        className="button button-full w-button form-button"
+                      >
+                        Submit
+                      </button>
 
-                    <button
-                      type="submit"
-                      className="button button-full w-button form-button"
-                    >
-                      Submit
-                    </button>
+                      <div>
+                        <div
+                          class="g-recaptcha"
+                          data-sitekey="6LcLgvwbAAAAAAc5KSusSDkJ9e0Pckth8NWrl2wm"
+                        ></div>
+                      </div>
+                    </div>
                   </form>
                 </div>
               </div>
