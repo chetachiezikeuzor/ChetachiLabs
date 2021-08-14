@@ -1069,19 +1069,22 @@ export default function Home() {
                     ></input>
 
                     <textarea
-                      name="Content-Form-Text-Area"
-                      id="Content-Form-Text-Area"
-                      cols="35"
+                      name="Text-Area"
+                      id="Text-Area"
+                      cols="42"
                       wrap="soft"
                     ></textarea>
 
-                    <input type="text" name="first-name" />
                     <button
                       type="submit"
                       className="button button-full w-button"
                     >
                       Submit
                     </button>
+
+                    <div className="recaptcha">
+                      <div data-netlify-recaptcha="true"></div>
+                    </div>
                   </form>
                 </div>
               </div>
