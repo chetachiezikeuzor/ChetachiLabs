@@ -1026,10 +1026,7 @@ export default function Home() {
                   >
                     <input type="hidden" name="form-name" value="contact v1" />
 
-                    <div>
-                      <label>First Name</label>
-                      <input type="text" name="first-name" />
-                    </div>
+                    <input type="text" name="first-name" />
                     <button type="submit">Submit</button>
                   </form>
                 </div>
