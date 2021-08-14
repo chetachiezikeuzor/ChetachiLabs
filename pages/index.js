@@ -1088,12 +1088,10 @@ export default function Home() {
                     ></textarea>
 
                     <div className="submit-box">
-                      <div>
-                        <div
-                          class="g-recaptcha"
-                          data-sitekey="6LcLgvwbAAAAAAc5KSusSDkJ9e0Pckth8NWrl2wm"
-                        ></div>
-                      </div>
+                      <div
+                        className="g-recaptcha"
+                        data-sitekey="6LcLgvwbAAAAAAc5KSusSDkJ9e0Pckth8NWrl2wm"
+                      ></div>
 
                       <button
                         type="submit"
