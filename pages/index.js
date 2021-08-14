@@ -1075,16 +1075,16 @@ export default function Home() {
                       wrap="soft"
                     ></textarea>
 
+                    <div className="recaptcha">
+                      <div data-netlify-recaptcha="true"></div>
+                    </div>
+
                     <button
                       type="submit"
                       className="button button-full w-button"
                     >
                       Submit
                     </button>
-
-                    <div className="recaptcha">
-                      <div data-netlify-recaptcha="true"></div>
-                    </div>
                   </form>
                 </div>
               </div>
