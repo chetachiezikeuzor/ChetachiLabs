@@ -790,6 +790,10 @@ BUTTONS
   gap: 24px;
 }
 
+.form-button {
+  align-self: flex-start;
+}
+
 .button {
   position: relative;
   display: flex;

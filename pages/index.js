@@ -1028,6 +1028,7 @@ export default function Home() {
                     method="post"
                     data-netlify="true"
                     onSubmit="submit"
+                    action="/success"
                     data-netlify-recaptcha="true"
                     data-netlify-honeypot="bot-field"
                   >
@@ -1096,8 +1097,6 @@ export default function Home() {
 
                       <button
                         type="submit"
-                        onClick={(e) => handleClick(e, "/about")}
-                        id="/img/cMenu Demo Header.png"
                         className="button button-full w-button form-button"
                       >
                         Submit
