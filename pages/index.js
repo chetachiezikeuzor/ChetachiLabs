@@ -1021,10 +1021,10 @@ export default function Home() {
                   <form
                     name="contact v1"
                     method="post"
+                    data-netlify-recaptcha="true"
                     data-netlify="true"
                     onSubmit="submit"
                     data-netlify-honeypot="bot-field"
-                    data-netlify-recaptcha="true"
                   >
                     <input type="hidden" name="form-name" value="contact v1" />
 
@@ -1081,14 +1081,13 @@ export default function Home() {
                       wrap="soft"
                     ></textarea>
 
-                    <div data-netlify-recaptcha="true"></div>
-
                     <button
                       type="submit"
                       className="button button-full w-button"
                     >
                       Submit
                     </button>
+                    <div data-netlify-recaptcha="true"></div>
                   </form>
                 </div>
               </div>
